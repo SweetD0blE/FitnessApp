@@ -24,6 +24,9 @@
         <activity android:name=".MainActivity"
             android:label="Registration">
         </activity>
+        <activity android:name=".Exercise"
+            android:label="Exercise">
+        </activity>
     </application>
 
 </manifest>

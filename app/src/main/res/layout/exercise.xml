@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:orientation="horizontal"
+
+
+    >
+
+    <ImageButton
+        android:id="@+id/imageButtonAllExercises"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="76dp"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/all_exercise"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewAllExercises"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="96dp"
+        android:text="Все упражнения"
+        android:textColor="#838282"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAllExercises"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonABS"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="37dp"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAllExercises"
+        app:srcCompat="@drawable/press"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewABS"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="64dp"
+        android:text="Пресс"
+        android:textColor="#838282"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonABS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAllExercises"></TextView>
+
+    <ImageButton
+        android:id="@+id/imageButtonArms"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="38dp"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonABS"
+        app:srcCompat="@drawable/arms"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewArms"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="67dp"
+        android:text="Руки"
+        android:textColor="#838282"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonArms"
+        app:layout_constraintTop_toBottomOf="@+id/textViewABS">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/ImageButtonBack"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="44dp"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonArms"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewBack"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="73dp"
+        android:text="Спина"
+        android:textColor="#838282"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ImageButtonBack"
+        app:layout_constraintTop_toBottomOf="@+id/textViewArms"></TextView>
+
+    <ImageButton
+        android:id="@+id/imageButtonChest"
+        android:layout_width="62dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="55dp"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageButtonBack"
+        app:srcCompat="@drawable/chest"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewChest"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="87dp"
+        android:text="Грудь"
+        android:textColor="#838282"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonChest"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBack"></TextView>
+
+    <ImageButton
+        android:id="@+id/imageButtonLegs"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="53dp"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonChest"
+        app:srcCompat="@drawable/legs"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewLegs"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="84dp"
+        android:text="Ноги"
+        android:textColor="#838282"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonLegs"></TextView>
+
+    <ImageButton
+        android:id="@+id/imageButtonReturn1"
+        android:layout_width="48dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#333"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return1"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
