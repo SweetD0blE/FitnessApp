@@ -2,6 +2,8 @@ package com.example.fitnesstrener;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,17 +13,27 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Register extends AppCompatActivity {
 
-    private EditText email_register;
-    private EditText password_register;
-    private Button register;
+     EditText mEmail_register,mWeight,mPassword_register,mFullName;
+     Button mRegister;
+     FirebaseAuth mAuth;
+     FirebaseFirestore fStore;
+     String userID;
 
-    private FirebaseAuth mAuth;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -29,29 +41,58 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.register);
 
         mAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
 
-        email_register = findViewById(R.id.email_register);
-        password_register = findViewById(R.id.password_register);
-        register = findViewById(R.id.register);
+        mFullName = findViewById(R.id.fullName);
+        mWeight = findViewById(R.id.weight);
+        mEmail_register = findViewById(R.id.email_register);
+        mPassword_register = findViewById(R.id.password_register);
+        mRegister = findViewById(R.id.register);
 
-        register.setOnClickListener(new View.OnClickListener() {
+
+        mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(email_register.getText().toString().isEmpty() || password_register.getText().toString().isEmpty()) {
+
+                String email = mEmail_register.getText().toString().trim();
+                String password = mPassword_register.getText().toString().trim();
+                String fullName = mFullName.getText().toString();
+                String weight = mWeight.getText().toString();
+
+
+                if (email.isEmpty() || password.isEmpty()) {
                     Toast.makeText(Register.this, "Заполните все данные", Toast.LENGTH_SHORT).show();
-                }else{
-                    mAuth.createUserWithEmailAndPassword(email_register.getText().toString(), password_register.getText().toString())
-                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()){
-                                Intent intent = new Intent(Register.this, MainActivity.class);
-                                startActivity(intent);
-                            }else{
-                                Toast.makeText(Register.this,"Проверьте правильность ввода", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
+
+                } else {
+                    mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
+                                        userID = mAuth.getCurrentUser().getUid();
+                                        DocumentReference documentReference = fStore.collection("Users").document(userID);
+                                        Map<String,Object> user = new HashMap<>();
+                                        user.put("Имя",fullName);
+                                        user.put("Логин",email);
+                                        user.put("Вес",weight);
+                                        documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                            @Override
+                                            public void onSuccess(Void aVoid) {
+                                                Log.d("Сообщение", "Пользователь создан c уникальным кодом:" + userID);
+                                            }
+                                        }).addOnFailureListener(new OnFailureListener() {
+                                            @Override
+                                            public void onFailure(@NonNull Exception e) {
+                                                Log.d("Сообщение об ошибке", "Пользователь не был создан");
+                                            }
+                                        });
+                                        Intent intent = new Intent(Register.this, Login.class);
+                                        startActivity(intent);
+
+                                    } else {
+                                        Toast.makeText(Register.this, "Проверьте правильность ввода", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
                 }
             }
         });

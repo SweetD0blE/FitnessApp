@@ -17,12 +17,14 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton Imgjour;
     private FirebaseAuth mAuth;
     private ImageButton Exercise;
+    private ImageButton Profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Profile = findViewById(R.id.profile);
         Exercise = findViewById(R.id.exercise);
         Imgjour = findViewById(R.id.imgjour);
         mAuth = FirebaseAuth.getInstance();
@@ -41,5 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
     });
+        Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Profile.class);
+                startActivity(intent);
+            }
+        });
 }
 }

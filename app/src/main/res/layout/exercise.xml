@@ -7,9 +7,7 @@
     android:layout_height="match_parent"
     android:background="#333"
     android:orientation="horizontal"
-
-
-    >
+    tools:context=".Exercise">
 
     <ImageButton
         android:id="@+id/imageButtonAllExercises"

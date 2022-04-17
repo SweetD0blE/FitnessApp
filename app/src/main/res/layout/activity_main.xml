@@ -13,8 +13,7 @@
         android:id="@+id/exercise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
+        android:layout_marginStart="53dp"
         android:layout_marginBottom="4dp"
         android:background="#333"
         android:src="@drawable/exercises"
@@ -50,11 +49,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
-        android:layout_marginLeft="264dp"
-        android:layout_marginTop="656dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginRight="51dp"
+        android:layout_marginEnd="48dp"
         android:layout_marginBottom="4dp"
         android:background="#333"
         android:src="@drawable/journal"
@@ -94,9 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:text="Журнал"
@@ -104,6 +97,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Profile"
+        app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toEndOf="@+id/Train" />
 
     <TextView
