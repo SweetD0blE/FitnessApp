@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -42,7 +43,7 @@ public class Profile extends AppCompatActivity {
     ImageView imageView;
     private final int Pick_image = 1;
     TextView fullName,weight,email;
-    Button buttonLoad;
+    Button buttonLoad,buttonLogout;
 
     //Firebase
     FirebaseAuth mAuth;
@@ -66,14 +67,23 @@ public class Profile extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         userId = mAuth.getCurrentUser().getUid();
 
+
         DocumentReference documentReference = fStore.collection("Users").document(userId);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
-                email.setText(documentSnapshot.getString("Логин"));
-                fullName.setText(documentSnapshot.getString("Имя"));
-                weight.setText(documentSnapshot.getString("Вес"));
+                if (documentSnapshot != null) {
+                    if (documentSnapshot.exists()) {
+
+                        email.setText(documentSnapshot.getString("Логин"));
+                        fullName.setText(documentSnapshot.getString("Имя"));
+                        weight.setText(documentSnapshot.getString("Вес"));
+                    } else {
+                        Log.d("Сообщение об ошибке", "Ошибка в документе");
+                    }
+                }
             }
+
         });
 
         StorageReference profileRef = storageReference.child("Users/" + mAuth.getCurrentUser().getUid() + "/uploadphoto.jpg");
@@ -92,6 +102,16 @@ public class Profile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent openGallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(openGallery, 1000);
+            }
+        });
+
+        buttonLogout = findViewById(R.id.buttonLogout);
+        buttonLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                startActivity(new Intent(Profile.this, Login.class));
+                finish();
             }
         });
     }
@@ -135,6 +155,8 @@ public class Profile extends AppCompatActivity {
             }
         });
     }
+
+
 }
 
 

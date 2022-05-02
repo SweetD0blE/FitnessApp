@@ -32,6 +32,15 @@
         <activity android:name=".Profile"
             android:label="Profile">
         </activity>
+        <activity android:name=".exercise.Press"
+            android:label="Press">
+        </activity>
+        <activity android:name=".exercise_in.Twisting"
+            android:label="Twisting">
+        </activity>
+        <activity android:name=".exercise_in.Planka"
+            android:label="Planka">
+        </activity>
     </application>
 
 </manifest>

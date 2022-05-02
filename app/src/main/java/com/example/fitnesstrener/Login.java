@@ -37,7 +37,7 @@ public class Login extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-                login.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
@@ -62,8 +62,7 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 });
-
-                registration.setOnClickListener(new View.OnClickListener() {
+        registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                startActivity(new Intent(getApplicationContext(),Register.class));
