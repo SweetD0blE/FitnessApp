@@ -11,6 +11,17 @@
     android:orientation="horizontal"
     tools:context=".Profile">
 
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="317dp"
+        android:layout_height="141dp"
+
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="33dp"
+        app:autoPlay="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:videoId="xBd5bowWAyo" />
 
     <TextView
         android:id="@+id/textView5"
@@ -25,11 +36,12 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="156dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="127dp"
+        android:layout_width="253dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="16dp"
         android:text=""
+        android:textAlignment="center"
         android:textColor="#838282"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
