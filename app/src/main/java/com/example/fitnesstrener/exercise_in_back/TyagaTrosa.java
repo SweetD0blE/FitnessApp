@@ -1,4 +1,4 @@
-package com.example.fitnesstrener.exercise_in_press;
+package com.example.fitnesstrener.exercise_in_back;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -20,8 +20,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-public class Twisting extends AppCompatActivity {
-
+public class TyagaTrosa extends AppCompatActivity {
     TextView title,osnmysch,slojnost,description;
 
 
@@ -44,7 +43,8 @@ public class Twisting extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        DocumentReference documentReference = fStore.collection("Exercise_press_twisting").document("muruEnBRhW5B7LkPLSR5");
+
+        DocumentReference documentReference = fStore.collection("Exercise_back_tyagatrossa").document("N7FogNLD2APYuezgmMuY");
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
@@ -68,12 +68,10 @@ public class Twisting extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "Md7_qPNaIXs";
+                String videoId = "14Zd69Hw6Xk";
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });
-
-
     }
 
 }

@@ -38,6 +38,9 @@
         <activity android:name=".exercise.Arms"
             android:label="Arms">
         </activity>
+        <activity android:name=".exercise.Back"
+            android:label="Back">
+        </activity>
         <activity android:name=".exercise_in_press.Twisting"
             android:label="Twisting">
         </activity>
@@ -68,7 +71,21 @@
         <activity android:name=".exercise_in_arms.UpShtanga"
             android:label="UpShtanga">
         </activity>
-
+        <activity android:name=".exercise_in_back.HyperExtenzia"
+            android:label="HyperExtenzia">
+        </activity>
+        <activity android:name=".exercise_in_back.Podtyagivaniya"
+            android:label="Podtyagivaniya">
+        </activity>
+        <activity android:name=".exercise_in_back.TyagaGanteli"
+            android:label="TyagaGanteli">
+        </activity>
+        <activity android:name=".exercise_in_back.TyagaTrosa"
+            android:label="TyagaTrosa">
+        </activity>
+        <activity android:name=".exercise_in_back.TyagaVerhnegoBlocka"
+            android:label="TyagaVerhnegoBlocka">
+        </activity>
 
     </application>
 
