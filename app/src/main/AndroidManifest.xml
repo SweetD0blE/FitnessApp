@@ -35,12 +35,41 @@
         <activity android:name=".exercise.Press"
             android:label="Press">
         </activity>
-        <activity android:name=".exercise_in.Twisting"
+        <activity android:name=".exercise.Arms"
+            android:label="Arms">
+        </activity>
+        <activity android:name=".exercise_in_press.Twisting"
             android:label="Twisting">
         </activity>
-        <activity android:name=".exercise_in.Planka"
+        <activity android:name=".exercise_in_press.Planka"
             android:label="Planka">
         </activity>
+        <activity android:name=".exercise_in_press.SidePlanka"
+            android:label="SidePlanka">
+        </activity>
+        <activity android:name=".exercise_in_press.Bicycle"
+            android:label="Bicycle">
+        </activity>
+        <activity android:name=".exercise_in_press.LegsUp"
+            android:label="LegsUp">
+        </activity>
+        <activity android:name=".exercise_in_arms.Molotok"
+            android:label="Molotok">
+        </activity>
+        <activity android:name=".exercise_in_arms.DiamondOtjim"
+            android:label="DiamondOtjim">
+        </activity>
+        <activity android:name=".exercise_in_arms.FranceJim"
+            android:label="FranceJim">
+        </activity>
+        <activity android:name=".exercise_in_arms.OntjimSkamii"
+            android:label="OntjimSkamii">
+        </activity>
+        <activity android:name=".exercise_in_arms.UpShtanga"
+            android:label="UpShtanga">
+        </activity>
+
+
     </application>
 
 </manifest>

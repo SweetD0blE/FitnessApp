@@ -1,17 +1,14 @@
-package com.example.fitnesstrener.exercise_in;
+package com.example.fitnesstrener.exercise_in_press;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.fitnesstrener.Exercise;
 import com.example.fitnesstrener.R;
-import com.example.fitnesstrener.exercise.Press;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -19,9 +16,11 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.storage.StorageReference;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-public class Twisting extends AppCompatActivity {
-
+public class LegsUp extends AppCompatActivity {
     TextView title,osnmysch,slojnost,description;
 
 
@@ -32,7 +31,7 @@ public class Twisting extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.press_skrychivanie);
+        setContentView(R.layout.main_exercise);
 
         title = findViewById(R.id.title);
         osnmysch = findViewById(R.id.osnmysch);
@@ -43,9 +42,9 @@ public class Twisting extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-        exerciseId = mAuth.getCurrentUser().getUid();
 
-        DocumentReference documentReference = fStore.collection("Exercise").document(exerciseId);
+
+        DocumentReference documentReference = fStore.collection("Exercise_press_legsup").document("jB3gwqBzbJlwnGz7ikZu");
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
@@ -61,6 +60,17 @@ public class Twisting extends AppCompatActivity {
                 }
             }
 
+        });
+
+        YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
+        getLifecycle().addObserver(youTubePlayerView);
+
+        youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                String videoId = "14Zd69Hw6Xk";
+                youTubePlayer.loadVideo(videoId, 0);
+            }
         });
     }
 

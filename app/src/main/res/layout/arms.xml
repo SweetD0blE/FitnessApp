@@ -9,7 +9,7 @@
     android:background="#333"
 
     android:orientation="horizontal"
-    tools:context=".exercise.Press">
+    tools:context=".exercise.Arms">
 
     <TableRow
         android:layout_width="match_parent"
@@ -33,11 +33,11 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewScrychivanie"
+            android:id="@+id/imageViewPushUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/twisting" />
+            app:srcCompat="@drawable/push_up" />
 
         <TextView
             android:id="@+id/textView3"
@@ -46,7 +46,8 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Скручивания"
+            android:text="Отжимания от скамьи"
+            android:textAlignment="textStart"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -57,7 +58,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewPlanka"
+            android:id="@+id/imageViewMolotok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -70,7 +71,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Планка"
+            android:text="Молотки"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -81,7 +82,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewSideplanka"
+            android:id="@+id/imageViewUpShtanga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -94,7 +95,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Боковая планка"
+            android:text="Подъём штанги"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -105,7 +106,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewBicycle"
+            android:id="@+id/imageViewDiamondOtjim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -118,7 +119,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Велосипед"
+            android:text="Алмазные отжимания"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -129,7 +130,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewLegsUp"
+            android:id="@+id/imageViewFrancejim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -142,7 +143,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Подъем ног"
+            android:text="Французский жим сидя"
             android:textSize="18sp"
             android:textStyle="bold" />
 

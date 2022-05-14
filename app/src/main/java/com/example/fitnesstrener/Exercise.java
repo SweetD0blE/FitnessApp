@@ -8,12 +8,13 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fitnesstrener.exercise.Arms;
 import com.example.fitnesstrener.exercise.Press;
 
 public class Exercise extends AppCompatActivity {
 
     private ImageButton imageButtonReturn1;
-    ImageButton imageButtonABS;
+    ImageButton imageButtonABS, imageButtonArms;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,17 +23,7 @@ public class Exercise extends AppCompatActivity {
 
         imageButtonABS = findViewById(R.id.imageButtonABS);
         imageButtonReturn1 = findViewById(R.id.imageButtonReturn1);
-
-
-
-
-
-
-
-
-
-
-
+        imageButtonArms = findViewById(R.id.imageButtonArms);
 
 
         imageButtonReturn1.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +41,18 @@ public class Exercise extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        imageButtonArms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Exercise.this, Arms.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }
 

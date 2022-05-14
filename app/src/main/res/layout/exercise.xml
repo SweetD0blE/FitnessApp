@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#333"
@@ -160,8 +164,8 @@
         android:layout_width="201dp"
         android:layout_height="29dp"
 
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="132dp"
         android:text="Ноги"
         android:textColor="#838282"
         android:textSize="20sp"
@@ -181,4 +185,35 @@
         app:srcCompat="@drawable/return1"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <ImageButton
+        android:id="@+id/imageButtonCardio"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="53dp"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonLegs"
+        app:srcCompat="@drawable/cardio"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewCardio"
+        android:layout_width="201dp"
+        android:layout_height="29dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="24dp"
+        android:text="Кардио"
+        android:textColor="#838282"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonCardio">
+
+    </TextView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

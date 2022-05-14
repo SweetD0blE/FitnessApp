@@ -1,4 +1,4 @@
-package com.example.fitnesstrener.exercise_in;
+package com.example.fitnesstrener.exercise_in_arms;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +20,8 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-public class Planka extends AppCompatActivity {
+public class DiamondOtjim extends AppCompatActivity {
+
     TextView title,osnmysch,slojnost,description;
 
 
@@ -31,7 +32,7 @@ public class Planka extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.press_planka);
+        setContentView(R.layout.main_exercise);
 
         title = findViewById(R.id.title);
         osnmysch = findViewById(R.id.osnmysch);
@@ -42,9 +43,9 @@ public class Planka extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-        exerciseId = mAuth.getCurrentUser().getUid();
 
-        DocumentReference documentReference = fStore.collection("Exercise_planka").document(exerciseId);
+
+        DocumentReference documentReference = fStore.collection("Exercise_arms_diamonotjim").document("cKZNFOSYnV6N0z3AzhqW");
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
@@ -68,7 +69,7 @@ public class Planka extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "xBd5bowWAyo";
+                String videoId = "14Zd69Hw6Xk";
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });
