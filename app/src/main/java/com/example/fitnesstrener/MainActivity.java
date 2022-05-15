@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton Exercise;
     private ImageButton Profile;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

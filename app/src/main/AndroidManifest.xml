@@ -50,6 +50,9 @@
         <activity android:name=".exercise.Cardio"
             android:label="Cardio">
         </activity>
+        <activity android:name=".Search"
+            android:label="Search">
+        </activity>
         <activity android:name=".exercise_in_press.Twisting"
             android:label="Twisting">
         </activity>

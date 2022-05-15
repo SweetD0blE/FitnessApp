@@ -18,7 +18,7 @@ import com.example.fitnesstrener.exercise.Press;
 public class Exercise extends AppCompatActivity {
 
     private ImageButton imageButtonReturn1;
-    ImageButton imageButtonABS, imageButtonArms, imageButtonBack, imageButtonChest, imageButtonLegs, imageButtonCardio;
+    ImageButton imageButtonABS, imageButtonArms, imageButtonBack, imageButtonChest, imageButtonLegs, imageButtonCardio, imageButtonAllExercises;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +95,16 @@ public class Exercise extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Exercise.this, Cardio.class);
+                startActivity(intent);
+            }
+        });
+
+        imageButtonAllExercises = findViewById(R.id.imageButtonAllExercises);
+
+        imageButtonAllExercises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Exercise.this, Search.class);
                 startActivity(intent);
             }
         });
