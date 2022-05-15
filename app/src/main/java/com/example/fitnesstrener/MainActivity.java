@@ -3,12 +3,11 @@ package com.example.fitnesstrener;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.fitnesstrener.calendar.Calendar;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Profile.class);
+                Intent intent = new Intent(MainActivity.this, com.example.fitnesstrener.profile.Profile.class);
                 startActivity(intent);
             }
         });

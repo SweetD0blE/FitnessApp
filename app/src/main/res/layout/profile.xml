@@ -9,7 +9,7 @@
     android:background="#333"
 
     android:orientation="horizontal"
-    tools:context=".Profile">
+    tools:context=".profile.Profile">
 
 
     <TextView

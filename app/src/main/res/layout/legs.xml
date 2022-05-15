@@ -9,7 +9,7 @@
     android:background="#333"
 
     android:orientation="horizontal"
-    tools:context=".exercise.Back">
+    tools:context=".exercise.Legs">
 
     <TableRow
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewHyperExtenzia"
+            android:id="@+id/imageViewSgibanieNog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -46,7 +46,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Гиперэкстензия"
+            android:text="Сгибание ног"
             android:textAlignment="textStart"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -58,7 +58,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewPodtyagivaniya"
+            android:id="@+id/imageViewZashagivanieNaLavky"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -66,12 +66,12 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="192dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Подтягивания"
+            android:text="Зашагивания на лавку"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -82,7 +82,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewTyagatrossa"
+            android:id="@+id/imageViewPrisedaniyaSoShtangoi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -95,7 +95,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Тяга троса сидя"
+            android:text="Приседания со штангой"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -106,7 +106,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewTyagaverhnegobloka"
+            android:id="@+id/imageViewTyagaSGantelyami"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -119,7 +119,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Тяга верхнего блока"
+            android:text="Тяга с гантелями"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -130,7 +130,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewTyagaganteli"
+            android:id="@+id/imageViewVipadiSGantelyami"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -143,7 +143,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:text="Тяга гантели в наклоне"
+            android:text="Выпады с гантелями"
             android:textSize="18sp"
             android:textStyle="bold" />
 

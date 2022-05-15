@@ -11,16 +11,16 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessTrener">
-        <activity android:name=".Login">
+        <activity android:name=".authorization.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Calendar"
+        <activity android:name=".calendar.Calendar"
             android:label="Calendar">
         </activity>
-        <activity android:name=".Register"
+        <activity android:name=".authentification.Register"
             android:label="Login">
         </activity>
         <activity android:name=".MainActivity"
@@ -29,7 +29,7 @@
         <activity android:name=".Exercise"
             android:label="Exercise">
         </activity>
-        <activity android:name=".Profile"
+        <activity android:name=".profile.Profile"
             android:label="Profile">
         </activity>
         <activity android:name=".exercise.Press"
@@ -40,6 +40,15 @@
         </activity>
         <activity android:name=".exercise.Back"
             android:label="Back">
+        </activity>
+        <activity android:name=".exercise.Chest"
+            android:label="Chest">
+        </activity>
+        <activity android:name=".exercise.Legs"
+            android:label="Legs">
+        </activity>
+        <activity android:name=".exercise.Cardio"
+            android:label="Cardio">
         </activity>
         <activity android:name=".exercise_in_press.Twisting"
             android:label="Twisting">
@@ -86,7 +95,51 @@
         <activity android:name=".exercise_in_back.TyagaVerhnegoBlocka"
             android:label="TyagaVerhnegoBlocka">
         </activity>
-
+        <activity android:name=".exercise_in_chest.JimGantelei"
+            android:label="JimGantelei">
+        </activity>
+        <activity android:name=".exercise_in_chest.JimShtangiLeja"
+            android:label="JimShtangiLeja">
+        </activity>
+        <activity android:name=".exercise_in_chest.Otjimaniya"
+            android:label="Otjimaniya">
+        </activity>
+        <activity android:name=".exercise_in_chest.OtjimNaBrysiah"
+            android:label="OtjimNaBrysiah">
+        </activity>
+        <activity android:name=".exercise_in_chest.SvedenieRyk"
+            android:label="SvedenieRyk">
+        </activity>
+        <activity android:name=".exercise_in_legs.PrisedaniyaSoShtangoi"
+            android:label="PrisedaniyaSoShtangoi">
+        </activity>
+        <activity android:name=".exercise_in_legs.SgibanieNog"
+            android:label="SgibanieNog">
+        </activity>
+        <activity android:name=".exercise_in_legs.TyagaSGantelyami"
+            android:label="TyagaSGantelyami">
+        </activity>
+        <activity android:name=".exercise_in_legs.VipadiSGantelyami"
+            android:label="VipadiSGantelyami">
+        </activity>
+        <activity android:name=".exercise_in_legs.Zashagivanie"
+            android:label="Zashagivanie">
+        </activity>
+        <activity android:name=".exercise_in_cardio.Stepper"
+            android:label="Stepper">
+        </activity>
+        <activity android:name=".exercise_in_cardio.BegovayaDorojka"
+            android:label="BegovayaDorojka">
+        </activity>
+        <activity android:name=".exercise_in_cardio.Berpi"
+            android:label="Berpi">
+        </activity>
+        <activity android:name=".exercise_in_cardio.JumpWithSkakalka"
+            android:label="JumpWithSkakalka">
+        </activity>
+        <activity android:name=".exercise_in_cardio.Velotrenajor"
+            android:label="Velotrenajor">
+        </activity>
     </application>
 
 </manifest>

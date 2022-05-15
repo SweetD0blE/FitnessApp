@@ -8,7 +8,7 @@ import android.widget.EditText;
 
 import androidx.test.rule.ActivityTestRule;
 
-import com.example.fitnesstrener.R;
+import com.example.fitnesstrener.authorization.Login;
 
 import org.junit.After;
 import org.junit.Before;

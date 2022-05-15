@@ -1,8 +1,7 @@
-package com.example.fitnesstrener;
+package com.example.fitnesstrener.authorization;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +11,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fitnesstrener.MainActivity;
+import com.example.fitnesstrener.R;
+import com.example.fitnesstrener.authentification.Register;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -65,7 +67,7 @@ public class Login extends AppCompatActivity {
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               startActivity(new Intent(getApplicationContext(),Register.class));
+               startActivity(new Intent(getApplicationContext(), Register.class));
             }
         });
 

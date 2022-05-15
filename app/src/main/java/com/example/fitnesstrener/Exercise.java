@@ -10,12 +10,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.fitnesstrener.exercise.Arms;
 import com.example.fitnesstrener.exercise.Back;
+import com.example.fitnesstrener.exercise.Cardio;
+import com.example.fitnesstrener.exercise.Chest;
+import com.example.fitnesstrener.exercise.Legs;
 import com.example.fitnesstrener.exercise.Press;
 
 public class Exercise extends AppCompatActivity {
 
     private ImageButton imageButtonReturn1;
-    ImageButton imageButtonABS, imageButtonArms, imageButtonBack;
+    ImageButton imageButtonABS, imageButtonArms, imageButtonBack, imageButtonChest, imageButtonLegs, imageButtonCardio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +69,35 @@ public class Exercise extends AppCompatActivity {
             }
         });
 
+        imageButtonChest = findViewById(R.id.imageButtonChest);
+
+        imageButtonChest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Exercise.this, Chest.class);
+                startActivity(intent);
+            }
+        });
+
+        imageButtonLegs = findViewById(R.id.imageButtonLegs);
+
+        imageButtonLegs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Exercise.this, Legs.class);
+                startActivity(intent);
+            }
+        });
+
+        imageButtonCardio = findViewById(R.id.imageButtonCardio);
+
+        imageButtonCardio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Exercise.this, Cardio.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 

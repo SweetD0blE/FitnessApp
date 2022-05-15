@@ -1,4 +1,4 @@
-package com.example.fitnesstrener;
+package com.example.fitnesstrener.calendar;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.widget.CalendarView.OnDateChangeListener;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.fitnesstrener.R;
 
 public class Calendar extends AppCompatActivity {
 
