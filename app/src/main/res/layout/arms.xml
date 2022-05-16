@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/plank" />
+            app:srcCompat="@drawable/hummers" />
 
         <TextView
             android:id="@+id/textView7"
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/side_plank" />
+            app:srcCompat="@drawable/upshtangi" />
 
         <TextView
             android:id="@+id/textView7"
@@ -110,7 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/bicycle" />
+            app:srcCompat="@drawable/diamon_pull_up" />
 
         <TextView
             android:id="@+id/textView7"
@@ -134,7 +134,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/up" />
+            app:srcCompat="@drawable/bench" />
 
         <TextView
             android:id="@+id/textView7"

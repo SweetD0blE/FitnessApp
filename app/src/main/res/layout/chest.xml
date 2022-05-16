@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/push_up" />
+            app:srcCompat="@drawable/push_upp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/plank" />
+            app:srcCompat="@drawable/up_ganteli" />
 
         <TextView
             android:id="@+id/textView2"
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/side_plank" />
+            app:srcCompat="@drawable/jim_leja" />
 
         <TextView
             android:id="@+id/textView7"
@@ -110,7 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/bicycle" />
+            app:srcCompat="@drawable/butterfly" />
 
         <TextView
             android:id="@+id/textView7"
@@ -134,7 +134,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
-            app:srcCompat="@drawable/up" />
+            app:srcCompat="@drawable/otjim_na_brysiah" />
 
         <TextView
             android:id="@+id/textView7"

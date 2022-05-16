@@ -18,7 +18,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageButtonReturn1"
             app:queryHint="Введите упражнение"
-            app:iconifiedByDefault="false"/>
+            app:iconifiedByDefault="false" />
 
         <ImageButton
             android:id="@+id/imageButtonReturn1"
@@ -34,14 +34,16 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0"
+            />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
