@@ -8,6 +8,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fitnesstrener.RecyclerView.Activity_exercise_list;
 import com.example.fitnesstrener.exercise.Arms;
 import com.example.fitnesstrener.exercise.Back;
 import com.example.fitnesstrener.exercise.Cardio;
@@ -104,7 +105,7 @@ public class Exercise extends AppCompatActivity {
         imageButtonAllExercises.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Exercise.this, Search.class);
+                Intent intent = new Intent(Exercise.this, Activity_exercise_list.class);
                 startActivity(intent);
             }
         });
