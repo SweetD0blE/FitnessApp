@@ -54,7 +54,7 @@ public class LoginTest {
         getInstrumentation().sendStringSync("111111");
         getInstrumentation().waitForIdleSync();
 
-        assertEquals("123456", password.getText().toString());
+        assertEquals("111111", password.getText().toString());
 
     }
 

@@ -27,4 +27,8 @@ public class Exercise_list {
     public void setImg_url(String img_url) {
         this.img_url = img_url;
     }
+
+
+    public void add(Exercise_list exercise_list) {
+    }
 }

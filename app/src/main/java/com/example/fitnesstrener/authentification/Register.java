@@ -2,6 +2,7 @@ package com.example.fitnesstrener.authentification;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.telephony.PhoneNumberUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,7 @@ import java.util.Map;
 
 public class Register extends AppCompatActivity {
 
-     EditText mEmail_register,mWeight,mPassword_register,mFullName;
+     EditText mEmail_register,mWeight,mPassword_register,mFullName, mGender, mNumber;
      Button mRegister;
      FirebaseAuth mAuth;
      FirebaseFirestore fStore;
@@ -49,6 +50,9 @@ public class Register extends AppCompatActivity {
         mEmail_register = findViewById(R.id.email_register);
         mPassword_register = findViewById(R.id.password_register);
         mRegister = findViewById(R.id.register);
+        mGender = findViewById(R.id.gender);
+        mNumber = findViewById(R.id.phone_register);
+
 
 
         mRegister.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +63,8 @@ public class Register extends AppCompatActivity {
                 String password = mPassword_register.getText().toString().trim();
                 String fullName = mFullName.getText().toString();
                 String weight = mWeight.getText().toString();
+                String gender = mGender.getText().toString();
+                String number = mNumber.getText().toString();
 
 
                 if (email.isEmpty() || password.isEmpty()) {
@@ -75,6 +81,9 @@ public class Register extends AppCompatActivity {
                                         user.put("Имя",fullName);
                                         user.put("Логин",email);
                                         user.put("Вес",weight);
+                                        user.put("Пол",gender);
+                                        user.put("Телефон",number);
+
                                         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
                                             public void onSuccess(Void aVoid) {

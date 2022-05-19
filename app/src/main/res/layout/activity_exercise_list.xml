@@ -8,12 +8,14 @@
     android:orientation="horizontal"
     tools:context=".RecyclerView.Activity_exercise_list">
 
-
     <EditText
         android:id="@+id/searchExercise"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="325dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="9dp"
+
         android:hint="Введите упражнение"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonReturn1">
 
     </EditText>
@@ -42,6 +44,15 @@
         app:layout_constraintVertical_bias="1.0"
         />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

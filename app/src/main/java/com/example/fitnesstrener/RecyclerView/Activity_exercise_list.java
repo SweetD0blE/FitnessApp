@@ -42,6 +42,7 @@ public class Activity_exercise_list extends AppCompatActivity {
     public static Context context;
     ImageButton imageButtonReturn1;
     EditText searchExercise;
+    String name;
 
 
     @Override
@@ -64,7 +65,8 @@ public class Activity_exercise_list extends AppCompatActivity {
 
         recyclerView.setAdapter(exerciseAdapter);
 
-        fstore.collection("Search").orderBy("name", Query.Direction.DESCENDING).get()
+
+        fstore.collection("Search").orderBy("name", Query.Direction.ASCENDING).get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -111,8 +113,8 @@ public class Activity_exercise_list extends AppCompatActivity {
               }
             }
         };
-
         searchExercise.addTextChangedListener(textWatcher);
+
     }
        private void searchExercise(String name) {
            if (!name.isEmpty()) {
@@ -134,6 +136,8 @@ public class Activity_exercise_list extends AppCompatActivity {
                        });
            }
        }
+
+
 
 
 }
