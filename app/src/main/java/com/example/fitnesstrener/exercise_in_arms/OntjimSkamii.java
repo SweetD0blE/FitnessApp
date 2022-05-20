@@ -68,7 +68,7 @@ public class OntjimSkamii extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "14Zd69Hw6Xk";
+                String videoId = "OSWanefT124";
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });

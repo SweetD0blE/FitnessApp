@@ -68,7 +68,7 @@ public class SgibanieNog extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "6geuLH-Fe9E";
+                String videoId = "rUz7mPfvi48";
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });

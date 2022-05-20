@@ -68,7 +68,7 @@ public class JimGantelei extends AppCompatActivity {
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "6geuLH-Fe9E";
+                String videoId = "BL4ackfRoUs";
                 youTubePlayer.loadVideo(videoId, 0);
             }
         });
