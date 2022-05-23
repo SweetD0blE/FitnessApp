@@ -40,7 +40,9 @@
         android:layout_marginStart="28dp"
         android:layout_marginBottom="264dp"
         android:text="Ваш Номер телефона:"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -51,7 +53,9 @@
         android:layout_marginStart="28dp"
         android:layout_marginBottom="304dp"
         android:text="Ваш Пол:"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -62,7 +66,9 @@
         android:layout_marginStart="28dp"
         android:layout_marginBottom="340dp"
         android:text="Ваш Вес:"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -73,7 +79,9 @@
         android:layout_marginStart="28dp"
         android:layout_marginBottom="372dp"
         android:text="Ваше Имя:"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -86,6 +94,7 @@
         android:text="Ваши данные"
         android:textColor="#838282"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -97,7 +106,9 @@
         android:layout_marginStart="28dp"
         android:layout_marginBottom="408dp"
         android:text="Ваш Логин:"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

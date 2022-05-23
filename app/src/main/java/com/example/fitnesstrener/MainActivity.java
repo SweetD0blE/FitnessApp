@@ -1,30 +1,19 @@
 package com.example.fitnesstrener;
 
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import com.example.fitnesstrener.calendar.Calendar;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.messaging.FirebaseMessaging;
+import com.example.fitnesstrener.training_and_food.Training;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton Imgjour;
-    private FirebaseAuth mAuth;
-    private ImageButton Exercise;
-    private ImageButton Profile;
+    private ImageButton Imgjour,Exercise,Profile, Train;
 
 
     @Override
@@ -35,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Profile = findViewById(R.id.profile);
         Exercise = findViewById(R.id.exercise);
         Imgjour = findViewById(R.id.imgjour);
-        mAuth = FirebaseAuth.getInstance();
+        Train = findViewById(R.id.train);
 
         Imgjour.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Train.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Training.class);
+                startActivity(intent);
+            }
+        });
 
 }
 }

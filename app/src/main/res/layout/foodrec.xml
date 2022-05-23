@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333"
+        android:orientation="horizontal"
+        tools:context=".Exercise">
+
+        <ImageButton
+            android:id="@+id/imageButtonWater"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="76dp"
+            android:background="#333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/water"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewWater"
+            android:layout_width="201dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="96dp"
+            android:text="Питьевой режим"
+            android:textColor="#838282"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonWater"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButtonMeat"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="37dp"
+            android:background="#333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonWater"
+            app:srcCompat="@drawable/meat"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewMeat"
+            android:layout_width="201dp"
+            android:layout_height="29dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="84dp"
+            android:text="Мясо"
+            android:textColor="#838282"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonMeat"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWater"></TextView>
+
+        <ImageButton
+            android:id="@+id/imageButtonFish"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:background="#333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonMeat"
+            app:srcCompat="@drawable/fish"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewFish"
+            android:layout_width="250dp"
+            android:layout_height="29dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="76dp"
+            android:text="Рыба и морепродукты"
+            android:textColor="#838282"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonFish"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMeat">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/imageButtonVegetables"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="44dp"
+            android:background="#333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonFish"
+            app:srcCompat="@drawable/vegetable"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewVegetables"
+            android:layout_width="201dp"
+            android:layout_height="29dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="88dp"
+            android:text="Овощи"
+            android:textColor="#838282"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonVegetables"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFish"></TextView>
+
+        <ImageButton
+            android:id="@+id/imageButtonNuts"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="55dp"
+            android:background="#333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonVegetables"
+            app:srcCompat="@drawable/nuts"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewNuts"
+            android:layout_width="201dp"
+            android:layout_height="29dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="96dp"
+            android:text="Орехи"
+            android:textColor="#838282"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonNuts"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVegetables"></TextView>
+
+        <ImageButton
+            android:id="@+id/imageButtonDairy"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="53dp"
+            android:background="#333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonNuts"
+            app:srcCompat="@drawable/dairy_products"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewDairy"
+            android:layout_width="270dp"
+            android:layout_height="29dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="132dp"
+            android:text="Молочные продукты и яйца"
+            android:textColor="#838282"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonDairy"></TextView>
+
+        <ImageButton
+            android:id="@+id/imageButtonReturn1"
+            android:layout_width="48dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#333"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/return1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonWheat"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="53dp"
+            android:background="#333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonDairy"
+            app:srcCompat="@drawable/wheat"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewWheat"
+            android:layout_width="201dp"
+            android:layout_height="29dp"
+
+            android:layout_marginStart="26dp"
+            android:layout_marginBottom="24dp"
+            android:text="Зерновые"
+            android:textColor="#838282"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonWheat">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

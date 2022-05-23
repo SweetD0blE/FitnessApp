@@ -30,6 +30,12 @@
             android:name=".calendar.Calendar"
             android:label="Calendar">
         </activity>
+        <activity android:name=".training_and_food.Training"
+            android:label="Training">
+        </activity>
+        <activity android:name=".training_and_food.FoodRec"
+            android:label="FoodRecommendation">
+        </activity>
         <activity
             android:name=".authentification.Register"
             android:label="Login">
@@ -163,6 +169,27 @@
         <activity
             android:name=".exercise_in_cardio.Velotrenajor"
             android:label="Velotrenajor"></activity>
+        <activity android:name=".food_in_training.Dairy"
+            android:label="Dairy">
+        </activity>
+        <activity android:name=".food_in_training.Fish"
+            android:label="Fish">
+        </activity>
+        <activity android:name=".food_in_training.Meat"
+            android:label="Meat">
+        </activity>
+        <activity android:name=".food_in_training.Nuts"
+            android:label="Nuts">
+        </activity>
+        <activity android:name=".food_in_training.Vegetables"
+            android:label="Vegetables">
+        </activity>
+        <activity android:name=".food_in_training.Water"
+            android:label="Water">
+        </activity>
+        <activity android:name=".food_in_training.Wheat"
+            android:label="Wheat">
+        </activity>
     </application>
 
 </manifest>
