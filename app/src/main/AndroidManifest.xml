@@ -262,6 +262,15 @@
         <activity android:name=".food_in_wheat.OtrybnoiHleb"
             android:label="OtrybnoiHleb">
         </activity>
+        <activity android:name=".training_in.Ponedelnik"
+            android:label="Ponedelnik">
+        </activity>
+        <activity android:name=".training_in.Sreda"
+            android:label="Sreda">
+        </activity>
+        <activity android:name=".training_in.Pyatniza"
+            android:label="Pyatniza">
+        </activity>
     </application>
 
 </manifest>

@@ -126,13 +126,13 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="371dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="188dp"
+        android:layout_width="379dp"
+        android:layout_height="417dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"
         android:text="TextView"
-        android:textColor="#838282"
         android:textAlignment="textStart"
+        android:textColor="#838282"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -145,7 +145,7 @@
         android:layout_marginTop="48dp"
         android:text="Пищевая ценность на 100гр:"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
