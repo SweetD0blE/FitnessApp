@@ -33,7 +33,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewPushUp"
+            android:id="@+id/imageViewTreska"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -46,6 +46,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
+            android:textColor="#838282"
             android:text="Треска"
             android:textAlignment="textStart"
             android:textSize="18sp"
@@ -58,7 +59,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewMolotok"
+            android:id="@+id/imageViewMintai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -72,6 +73,7 @@
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Минтай"
+            android:textColor="#838282"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -82,7 +84,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewUpShtanga"
+            android:id="@+id/imageViewLosos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -95,6 +97,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
+            android:textColor="#838282"
             android:text="Лосось"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -106,7 +109,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewDiamondOtjim"
+            android:id="@+id/imageViewTynec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -117,6 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#838282"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Тунец"

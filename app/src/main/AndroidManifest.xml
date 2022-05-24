@@ -190,6 +190,78 @@
         <activity android:name=".food_in_training.Wheat"
             android:label="Wheat">
         </activity>
+        <activity android:name=".food_in_dairy.Kefir"
+            android:label="Kefir">
+        </activity>
+        <activity android:name=".food_in_dairy.Cheese"
+            android:label="Cheese">
+        </activity>
+        <activity android:name=".food_in_dairy.Eggs"
+            android:label="Eggs">
+        </activity>
+        <activity android:name=".food_in_dairy.Yogurt"
+            android:label="Yogurt">
+        </activity>
+        <activity android:name=".food_in_meat.Chicken"
+            android:label="Chicken">
+        </activity>
+        <activity android:name=".food_in_meat.Indeika"
+            android:label="Indeika">
+        </activity>
+        <activity android:name=".food_in_meat.Rabbit"
+            android:label="Rabbit">
+        </activity>
+        <activity android:name=".food_in_meat.Telyatina"
+            android:label="Telyatina">
+        </activity>
+        <activity android:name=".food_in_fish.Losos"
+            android:label="Losos">
+        </activity>
+        <activity android:name=".food_in_fish.Mintai"
+            android:label="Mintai">
+        </activity>
+        <activity android:name=".food_in_fish.Treska"
+            android:label="Treska">
+        </activity>
+        <activity android:name=".food_in_fish.Tynec"
+            android:label="Tynec">
+        </activity>
+        <activity android:name=".food_in_vegetables.Carrot"
+            android:label="Carrot">
+        </activity>
+        <activity android:name=".food_in_vegetables.Cucumber"
+            android:label="Cucumber">
+        </activity>
+        <activity android:name=".food_in_vegetables.Kabachki"
+            android:label="Kabachki">
+        </activity>
+        <activity android:name=".food_in_vegetables.Kapysta"
+            android:label="Kapysta">
+        </activity>
+        <activity android:name=".food_in_nuts.Cashew"
+            android:label="Cashew">
+        </activity>
+        <activity android:name=".food_in_nuts.Funduk"
+            android:label="Funduk">
+        </activity>
+        <activity android:name=".food_in_nuts.GrezkiyOreh"
+            android:label="GrezkiyOreh">
+        </activity>
+        <activity android:name=".food_in_nuts.Mindal"
+            android:label="Mindal">
+        </activity>
+        <activity android:name=".food_in_wheat.Celnozernovoi"
+            android:label="Celnozernovoi">
+        </activity>
+        <activity android:name=".food_in_wheat.Grecha"
+            android:label="Grecha">
+        </activity>
+        <activity android:name=".food_in_wheat.Makaroni"
+            android:label="Makaroni">
+        </activity>
+        <activity android:name=".food_in_wheat.OtrybnoiHleb"
+            android:label="OtrybnoiHleb">
+        </activity>
     </application>
 
 </manifest>

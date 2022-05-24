@@ -44,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#838282"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Отжимания от скамьи"
@@ -70,6 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
+            android:textColor="#838282"
             android:paddingStart="50sp"
             android:text="Молотки"
             android:textSize="18sp"
@@ -96,6 +98,7 @@
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Подъём штанги"
+            android:textColor="#838282"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -119,6 +122,7 @@
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
+            android:textColor="#838282"
             android:text="Алмазные отжимания"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -140,6 +144,7 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#838282"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"

@@ -33,7 +33,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewPushUp"
+            android:id="@+id/imageViewKefir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -44,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#838282"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Кефир"
@@ -58,7 +59,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewMolotok"
+            android:id="@+id/imageViewYogurt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -69,6 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#838282"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Йогурт"
@@ -82,7 +84,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewUpShtanga"
+            android:id="@+id/imageViewCheese"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -94,6 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
+            android:textColor="#838282"
             android:paddingStart="50sp"
             android:text="Сыр"
             android:textSize="18sp"
@@ -106,7 +109,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewDiamondOtjim"
+            android:id="@+id/imageViewEggs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -118,6 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
+            android:textColor="#838282"
             android:paddingStart="50sp"
             android:text="Яйцо"
             android:textSize="18sp"

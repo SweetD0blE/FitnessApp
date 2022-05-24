@@ -33,7 +33,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewPushUp"
+            android:id="@+id/imageViewFunduk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -41,6 +41,7 @@
 
         <TextView
             android:id="@+id/textView3"
+            android:textColor="#838282"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -58,7 +59,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewMolotok"
+            android:id="@+id/imageViewMindal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -69,6 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#838282"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Миндаль"
@@ -82,7 +84,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewUpShtanga"
+            android:id="@+id/imageViewGrezkiyOreh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -93,6 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#838282"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Грецкий орех"
@@ -106,7 +109,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewDiamondOtjim"
+            android:id="@+id/imageViewCashew"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="30sp"
@@ -117,6 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="#838282"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Кешью"

@@ -1,4 +1,4 @@
-package com.example.fitnesstrener.food_in_training;
+package com.example.fitnesstrener.food_in_fish;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,8 +15,9 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
-public class Water extends AppCompatActivity {
-    TextView title,description;
+public class Tynec extends AppCompatActivity {
+
+    TextView title, description, belok, jiri, yglevodi, kkal;
 
     FirebaseAuth mAuth;
     FirebaseFirestore fStore;
@@ -24,19 +25,22 @@ public class Water extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_food_water);
+        setContentView(R.layout.main_food);
 
 
         title = findViewById(R.id.title);
+        belok = findViewById(R.id.belok);
+        jiri = findViewById(R.id.jiri);
+        yglevodi = findViewById(R.id.yglevodi);
+        kkal = findViewById(R.id.kkal);
         description = findViewById(R.id.description);
-
 
 
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
 
-        DocumentReference documentReference = fStore.collection("Food_in_water").document("YEsh0I8O2K9euMmbYN4A");
+        DocumentReference documentReference = fStore.collection("Food_fish_tynec").document("9QJbT8Klo4uZKelwSsdp");
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
@@ -44,6 +48,10 @@ public class Water extends AppCompatActivity {
                     if (documentSnapshot.exists()) {
                         title.setText(documentSnapshot.getString("Название"));
                         description.setText(documentSnapshot.getString("Описание"));
+                        belok.setText(documentSnapshot.getString("Белки"));
+                        jiri.setText(documentSnapshot.getString("Жиры"));
+                        yglevodi.setText(documentSnapshot.getString("Углеводы"));
+                        kkal.setText(documentSnapshot.getString("Ккал"));
 
 
                     } else {

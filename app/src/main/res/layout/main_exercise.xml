@@ -30,7 +30,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="368dp"
         android:text="Сложность выполнения:"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -54,7 +56,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="412dp"
         android:text="Основные мышцы:"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -65,6 +69,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginBottom="418dp"
         android:text="TextView"
+        android:textColor="#838282"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2" />
@@ -77,6 +82,7 @@
         android:layout_marginBottom="370dp"
         android:text="TextView"
         android:textSize="16sp"
+        android:textColor="#838282"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5" />
 
@@ -89,6 +95,7 @@
         android:text="TextView"
         android:textAlignment="textStart"
         android:textSize="16sp"
+        android:textColor="#838282"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
