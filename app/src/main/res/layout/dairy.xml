@@ -36,7 +36,7 @@
             android:id="@+id/imageViewKefir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30sp"
+            android:padding="20sp"
             app:srcCompat="@drawable/kefir" />
 
         <TextView
@@ -62,7 +62,7 @@
             android:id="@+id/imageViewYogurt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30sp"
+            android:padding="20sp"
             app:srcCompat="@drawable/yogurt" />
 
         <TextView
@@ -87,7 +87,7 @@
             android:id="@+id/imageViewCheese"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30sp"
+            android:padding="20sp"
             app:srcCompat="@drawable/cheese" />
 
         <TextView
@@ -112,7 +112,7 @@
             android:id="@+id/imageViewEggs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="30sp"
+            android:padding="20sp"
             app:srcCompat="@drawable/eggs" />
 
         <TextView

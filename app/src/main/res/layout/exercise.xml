@@ -32,14 +32,10 @@
         android:layout_height="29dp"
         android:layout_marginStart="29dp"
         android:layout_marginTop="92dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="64dp"
         android:text="Все упражнения"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewABS"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButtonAllExercises"
         app:layout_constraintTop_toTopOf="parent" />
 
