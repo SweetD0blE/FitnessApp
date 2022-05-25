@@ -13,7 +13,7 @@
         android:id="@+id/exercise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="78dp"
         android:layout_marginBottom="4dp"
         android:background="#333"
         android:src="@drawable/exercises"
@@ -24,7 +24,7 @@
         android:id="@+id/train"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="64dp"
         android:layout_marginBottom="4dp"
         android:background="#333"
         android:src="@drawable/training"
@@ -48,7 +48,7 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="58dp"
         android:layout_marginBottom="4dp"
         android:background="#333"
 

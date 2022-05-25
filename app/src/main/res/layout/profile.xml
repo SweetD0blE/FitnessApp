@@ -78,7 +78,7 @@
         android:layout_height="23dp"
         android:layout_marginStart="28dp"
         android:layout_marginBottom="372dp"
-        android:text="Ваше Имя:"
+        android:text="Ваше ФИО:"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"

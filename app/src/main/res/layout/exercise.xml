@@ -15,13 +15,14 @@
 
     <ImageButton
         android:id="@+id/imageButtonAllExercises"
-        android:layout_width="58dp"
-        android:layout_height="59dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
 
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="20dp"
+
         android:background="#333"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAllExercises"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/all_exercise"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -30,23 +31,25 @@
         android:id="@+id/textViewAllExercises"
         android:layout_width="201dp"
         android:layout_height="29dp"
-        android:layout_marginStart="29dp"
         android:layout_marginTop="92dp"
         android:text="Все упражнения"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonAllExercises"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButtonABS"
-        android:layout_width="54dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="37dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+
         android:background="#333"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewABS"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonAllExercises"
         app:srcCompat="@drawable/press"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -56,23 +59,25 @@
         android:layout_width="201dp"
         android:layout_height="29dp"
 
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:text="Пресс"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonABS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAllExercises"></TextView>
 
     <ImageButton
         android:id="@+id/imageButtonArms"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="38dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+
         android:background="#333"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewArms"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonABS"
         app:srcCompat="@drawable/arms"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -81,26 +86,27 @@
         android:id="@+id/textViewArms"
         android:layout_width="201dp"
         android:layout_height="29dp"
-
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="72dp"
         android:text="Руки"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonArms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewABS">
 
     </TextView>
 
     <ImageButton
         android:id="@+id/imageButtonBack"
-        android:layout_width="61dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+
         android:background="#333"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewBack"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonArms"
         app:srcCompat="@drawable/back"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -110,23 +116,26 @@
         android:layout_width="201dp"
         android:layout_height="29dp"
 
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="68dp"
         android:text="Спина"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewArms"></TextView>
 
     <ImageButton
         android:id="@+id/imageButtonChest"
-        android:layout_width="62dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="55dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+
         android:background="#333"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewChest"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBack"
         app:srcCompat="@drawable/chest"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -136,23 +145,25 @@
         android:layout_width="201dp"
         android:layout_height="29dp"
 
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="68dp"
         android:text="Грудь"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonChest"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBack"></TextView>
 
     <ImageButton
         android:id="@+id/imageButtonLegs"
-        android:layout_width="63dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="53dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
         android:background="#333"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewLegs"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonChest"
         app:srcCompat="@drawable/legs"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -162,14 +173,15 @@
         android:layout_width="201dp"
         android:layout_height="29dp"
 
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginTop="64dp"
         android:text="Ноги"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonLegs"></TextView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChest"></TextView>
 
     <ImageButton
         android:id="@+id/imageButtonReturn1"
@@ -185,12 +197,12 @@
 
     <ImageButton
         android:id="@+id/imageButtonCardio"
-        android:layout_width="63dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="53dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
         android:background="#333"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCardio"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonLegs"
         app:srcCompat="@drawable/cardio"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -200,14 +212,15 @@
         android:layout_width="201dp"
         android:layout_height="29dp"
 
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="64dp"
         android:text="Кардио"
         android:textColor="#838282"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonCardio">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLegs">
 
     </TextView>
 

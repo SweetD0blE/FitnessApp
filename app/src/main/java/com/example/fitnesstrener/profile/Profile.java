@@ -72,8 +72,9 @@ public class Profile extends AppCompatActivity {
                     if (documentSnapshot.exists()) {
 
                         email.setText(documentSnapshot.getString("Логин"));
-                        fullName.setText(documentSnapshot.getString("Имя"));
+                        fullName.setText(documentSnapshot.getString("ФИО"));
                         weight.setText(documentSnapshot.getString("Вес"));
+                        gender.setText(documentSnapshot.getString("Пол"));
                         gender.setText(documentSnapshot.getString("Пол"));
                         phone.setText(documentSnapshot.getString("Телефон"));
                     } else {

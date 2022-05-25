@@ -24,10 +24,10 @@
         android:id="@+id/cardViewFood"
         android:layout_width="370dp"
         android:layout_height="100dp"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="432dp"
         app:cardBackgroundColor="#4d4d4d"
         app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -68,10 +68,10 @@
         android:id="@+id/cardViewSreda"
         android:layout_width="370dp"
         android:layout_height="100dp"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="196dp"
         app:cardBackgroundColor="#4d4d4d"
         app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -112,10 +112,10 @@
         android:id="@+id/cardViewPonedelnik"
         android:layout_width="370dp"
         android:layout_height="100dp"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="84dp"
         app:cardBackgroundColor="#4d4d4d"
         app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -156,10 +156,10 @@
         android:id="@+id/cardViewPyatniza"
         android:layout_width="370dp"
         android:layout_height="100dp"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="312dp"
         app:cardBackgroundColor="#4d4d4d"
         app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
