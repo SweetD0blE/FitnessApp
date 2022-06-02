@@ -26,7 +26,7 @@ public class Cardio extends AppCompatActivity {
 
     ImageButton imageButtonReturn1;
     ImageView imageViewStepper, imageViewBegovayaDorojka, imageViewJumpWithSkakalka,imageViewBerpi ,imageViewVelotrenajor ;
-    TextView title, osnmysch, slojnost, description;
+    TextView textViewStepper,textViewBegovayaDorojka , textViewJumpWithSkakalka,textViewBerpi , textViewVelotrenajor;
 
 
     @Override
@@ -43,6 +43,7 @@ public class Cardio extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         imageViewStepper = findViewById(R.id.imageViewStepper);
 
         imageViewStepper.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +87,56 @@ public class Cardio extends AppCompatActivity {
         imageViewVelotrenajor = findViewById(R.id.imageViewVelotrenajor);
 
         imageViewVelotrenajor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cardio.this, Velotrenajor.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewStepper = findViewById(R.id.textViewStepper);
+
+        textViewStepper.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Cardio.this, Stepper.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewBegovayaDorojka = findViewById(R.id.textViewBegovayaDorojka);
+
+        textViewBegovayaDorojka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cardio.this, BegovayaDorojka.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewJumpWithSkakalka = findViewById(R.id.textViewJumpWithSkakalka);
+
+        textViewJumpWithSkakalka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cardio.this, JumpWithSkakalka.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewBerpi = findViewById(R.id.textViewBerpi);
+
+        textViewBerpi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Cardio.this, Berpi.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewVelotrenajor = findViewById(R.id.textViewVelotrenajor);
+
+        textViewVelotrenajor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Cardio.this, Velotrenajor.class);

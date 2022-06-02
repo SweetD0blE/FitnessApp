@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,6 +29,7 @@ public class FoodRec extends AppCompatActivity {
 
     private ImageButton imageButtonReturn1;
     ImageButton imageButtonWater, imageButtonMeat, imageButtonFish, imageButtonVegetables, imageButtonNuts, imageButtonDairy, imageButtonWheat;
+    TextView textViewWater, textViewMeat, textViewFish,textViewVegetables ,textViewNuts, textViewDairy,textViewWheat  ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +110,77 @@ public class FoodRec extends AppCompatActivity {
         imageButtonWheat = findViewById(R.id.imageButtonWheat);
 
         imageButtonWheat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FoodRec.this, Wheat.class);
+                startActivity(intent);
+            }
+        });
+
+
+        textViewWater = findViewById(R.id.textViewWater);
+
+        textViewWater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FoodRec.this, Water.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewMeat = findViewById(R.id.textViewMeat);
+
+        textViewMeat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FoodRec.this, Meat.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewFish = findViewById(R.id.textViewFish);
+
+        textViewFish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FoodRec.this, Fish.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewVegetables = findViewById(R.id.textViewVegetables);
+
+        textViewVegetables.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FoodRec.this, Vegetables.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewNuts = findViewById(R.id.textViewNuts);
+
+        textViewNuts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FoodRec.this, Nuts.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewDairy = findViewById(R.id.textViewDairy);
+
+        textViewDairy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FoodRec.this, Dairy.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewWheat = findViewById(R.id.textViewWheat);
+
+        textViewWheat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(FoodRec.this, Wheat.class);

@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333"
+    android:background="#4d4d4d"
     tools:context=".authentification.Register">
 
     <EditText
         android:id="@+id/phone_register"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="128dp"
         android:background="@drawable/edit_text_bg"
         android:hint="Введите телефон"
         android:inputType="phone"
@@ -26,11 +26,14 @@
         android:id="@+id/fullName"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="84dp"
         android:background="@drawable/edit_text_bg"
         android:hint="Введите ваше ФИО"
         android:paddingLeft="15dp"
-
+        android:maxLength="35"
+        android:paddingRight="10dp"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,10 +43,14 @@
         android:id="@+id/email_register"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="196dp"
         android:background="@drawable/edit_text_bg"
         android:hint="Введите Email"
         android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:maxLength="35"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -57,6 +64,8 @@
         android:background="@drawable/edit_text_bg"
         android:hint="Введите пароль"
         android:paddingLeft="15dp"
+        android:maxLength="15"
+        android:selectAllOnFocus="true"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -66,9 +75,10 @@
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="184dp"
         android:background="@drawable/button_bg"
         android:text="Зарегистрироваться"
+        android:textColor="#cccccc"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -80,7 +90,7 @@
         android:id="@+id/weight"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="140dp"
         android:background="@drawable/edit_text_bg"
         android:hint="Введите ваш вес"
         android:inputType="numberDecimal"
@@ -108,10 +118,11 @@
 
     <RadioGroup
         android:id="@+id/ragioGender"
-        android:layout_width="117dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_register">
@@ -120,13 +131,15 @@
             android:id="@+id/radioButtonM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="М" />
+            android:text="М"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/radioButtonW"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ж" />
+            android:text="Ж"
+            android:textStyle="bold" />
     </RadioGroup>
 
     <EditText
@@ -136,6 +149,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_bg"
         android:ems="10"
+        android:maxLength="10"
         android:hint="Введите дату рождения"
         android:inputType="date"
         android:paddingLeft="15dp"

@@ -6,7 +6,7 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333"
+    android:background="#4d4d4d"
     android:orientation="horizontal"
     tools:context=".food_in_training.Fish">
 
@@ -20,7 +20,7 @@
             android:layout_height="39dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:background="#333"
+            android:background="#4d4d4d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/return1"
@@ -40,13 +40,13 @@
             app:srcCompat="@drawable/treska" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewTreska"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:text="Треска"
             android:textAlignment="textStart"
             android:textSize="18sp"
@@ -66,14 +66,14 @@
             app:srcCompat="@drawable/mintai" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewMintai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Минтай"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -91,13 +91,13 @@
             app:srcCompat="@drawable/losos" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewLosos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:text="Лосось"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -116,11 +116,11 @@
             app:srcCompat="@drawable/fish_tynec" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewTynec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Тунец"

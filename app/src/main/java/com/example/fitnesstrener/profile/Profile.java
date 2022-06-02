@@ -36,7 +36,7 @@ public class Profile extends AppCompatActivity {
     //Объявляем используемые переменные:
     ImageView imageView;
     private final int Pick_image = 1;
-    TextView fullName,weight,email,gender,phone;
+    TextView fullName,weight,email,gender,phone,date;
     Button buttonLoad,buttonLogout;
 
     //Firebase
@@ -57,6 +57,7 @@ public class Profile extends AppCompatActivity {
         email = findViewById(R.id.yourlogin);
         gender = findViewById(R.id.yourgender);
         phone = findViewById(R.id.yourphone);
+        date = findViewById(R.id.yourdate);
 
         storageReference = FirebaseStorage.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
@@ -74,9 +75,11 @@ public class Profile extends AppCompatActivity {
                         email.setText(documentSnapshot.getString("Логин"));
                         fullName.setText(documentSnapshot.getString("ФИО"));
                         weight.setText(documentSnapshot.getString("Вес"));
-                        gender.setText(documentSnapshot.getString("Пол"));
+                        gender.setText(documentSnapshot.getString("Ваш Пол"));
                         gender.setText(documentSnapshot.getString("Пол"));
                         phone.setText(documentSnapshot.getString("Телефон"));
+                        date.setText(documentSnapshot.getString("Дата рождения"));
+
                     } else {
                         Log.d("Сообщение об ошибке", "Ошибка в документе");
                     }

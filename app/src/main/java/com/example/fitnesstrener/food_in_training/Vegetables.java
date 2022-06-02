@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,6 +23,7 @@ import com.example.fitnesstrener.training_and_food.FoodRec;
 public class Vegetables extends AppCompatActivity {
     ImageButton imageButtonReturn1;
 
+    TextView textViewKapusta,textViewCucumber , textViewCarrot, textViewKabachki;
     ImageView imageViewKapusta,imageViewCucumber,imageViewCarrot,imageViewKabachki;
 
     @Override
@@ -74,6 +76,46 @@ public class Vegetables extends AppCompatActivity {
         imageViewKabachki = findViewById(R.id.imageViewKabachki);
 
         imageViewKabachki.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Vegetables.this, Kabachki.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewKapusta = findViewById(R.id.textViewKapusta);
+
+        textViewKapusta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Vegetables.this, Kapysta.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewCucumber = findViewById(R.id.textViewCucumber);
+
+        textViewCucumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Vegetables.this, Cucumber.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewCarrot = findViewById(R.id.textViewCarrot);
+
+        textViewCarrot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Vegetables.this, Carrot.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewKabachki = findViewById(R.id.textViewKabachki);
+
+        textViewKabachki.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Vegetables.this, Kabachki.class);

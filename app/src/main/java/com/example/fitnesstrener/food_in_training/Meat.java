@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +24,8 @@ public class Meat extends AppCompatActivity {
     ImageButton imageButtonReturn1;
 
     ImageView imageViewChicken,imageViewIndeika,imageViewTelyatina,imageViewRabbit;
+    TextView textViewChicken, textViewIndeika,textViewRabbit , textViewTelyatina;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +76,46 @@ public class Meat extends AppCompatActivity {
         imageViewRabbit = findViewById(R.id.imageViewRabbit);
 
         imageViewRabbit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Meat.this, Rabbit.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewChicken = findViewById(R.id.textViewChicken);
+
+        textViewChicken.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Meat.this, Chicken.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewIndeika = findViewById(R.id.textViewIndeika);
+
+        textViewIndeika.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Meat.this, Indeika.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewTelyatina = findViewById(R.id.textViewTelyatina);
+
+        textViewTelyatina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Meat.this, Telyatina.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewRabbit = findViewById(R.id.textViewRabbit);
+
+        textViewRabbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Meat.this, Rabbit.class);

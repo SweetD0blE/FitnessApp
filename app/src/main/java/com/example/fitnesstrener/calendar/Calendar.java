@@ -23,7 +23,7 @@ public class Calendar extends AppCompatActivity {
         // Связываемся с нашим календариком:
         mCalendarView = (CalendarView)findViewById(R.id.calendarView);
 
-        //Настраиваем слушателя смены даты:
+        //Настраиваем слушателя смены даты
         mCalendarView.setOnDateChangeListener(new OnDateChangeListener(){
 
             // Описываем метод выбора даты в календаре:

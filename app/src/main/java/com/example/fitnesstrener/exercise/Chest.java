@@ -25,7 +25,7 @@ import com.example.fitnesstrener.exercise_in_chest.SvedenieRyk;
 public class Chest extends AppCompatActivity {
     ImageButton imageButtonReturn1;
     ImageView imageViewOtjim, imageViewJimGantelei, imageViewJimShtangiLeja,imageViewSvedenieRyk ,imageViewOtjimNaBrysiah ;
-    TextView title, osnmysch, slojnost, description;
+    TextView textViewOtjim,textViewJimGantelei , textViewJimShtangiLeja,textViewSvedenieRyk , textViewOtjimNaBrysiah;
 
 
     @Override
@@ -42,6 +42,7 @@ public class Chest extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         imageViewOtjim = findViewById(R.id.imageViewOtjim);
 
         imageViewOtjim.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +86,56 @@ public class Chest extends AppCompatActivity {
         imageViewOtjimNaBrysiah = findViewById(R.id.imageViewOtjimNaBrysiah);
 
         imageViewOtjimNaBrysiah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Chest.this, OtjimNaBrysiah.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewOtjim = findViewById(R.id.textViewOtjim);
+
+        textViewOtjim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Chest.this, Otjimaniya.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewJimGantelei = findViewById(R.id.textViewJimGantelei);
+
+        textViewJimGantelei.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Chest.this, JimGantelei.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewJimShtangiLeja = findViewById(R.id.textViewJimShtangiLeja);
+
+        textViewJimShtangiLeja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Chest.this, JimShtangiLeja.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewSvedenieRyk = findViewById(R.id.textViewSvedenieRyk);
+
+        textViewSvedenieRyk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Chest.this, SvedenieRyk.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewOtjimNaBrysiah = findViewById(R.id.textViewOtjimNaBrysiah);
+
+        textViewOtjimNaBrysiah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Chest.this, OtjimNaBrysiah.class);

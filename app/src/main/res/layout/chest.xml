@@ -6,7 +6,7 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333"
+    android:background="#4d4d4d"
 
     android:orientation="horizontal"
     tools:context=".exercise.Chest">
@@ -21,7 +21,7 @@
             android:layout_height="39dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:background="#333"
+            android:background="#4d4d4d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/return1"
@@ -40,12 +40,12 @@
             app:srcCompat="@drawable/push_upp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewOtjim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Отжимания"
             android:textAlignment="textStart"
@@ -66,12 +66,12 @@
             app:srcCompat="@drawable/up_ganteli" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewJimGantelei"
             android:layout_width="192dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Жим гантелей"
             android:textSize="18sp"
@@ -91,12 +91,12 @@
             app:srcCompat="@drawable/jim_leja" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewJimShtangiLeja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Жим штанги лежа"
             android:textSize="18sp"
@@ -116,12 +116,12 @@
             app:srcCompat="@drawable/butterfly" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewSvedenieRyk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Сведение рук"
             android:textSize="18sp"
@@ -141,11 +141,11 @@
             app:srcCompat="@drawable/otjim_na_brysiah" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewOtjimNaBrysiah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Отжимания на брусьях"

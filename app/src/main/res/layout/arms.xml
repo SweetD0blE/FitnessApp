@@ -6,7 +6,7 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333"
+    android:background="#4d4d4d"
 
     android:orientation="horizontal"
     tools:context=".exercise.Arms">
@@ -21,7 +21,7 @@
             android:layout_height="39dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:background="#333"
+            android:background="#4d4d4d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/return1"
@@ -40,11 +40,11 @@
             app:srcCompat="@drawable/push_up" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewPushUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Отжимания от скамьи"
@@ -66,12 +66,12 @@
             app:srcCompat="@drawable/hummers" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewMolotok"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Молотки"
             android:textSize="18sp"
@@ -91,14 +91,14 @@
             app:srcCompat="@drawable/upshtangi" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewUpShtanga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Подъём штанги"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -116,13 +116,13 @@
             app:srcCompat="@drawable/diamon_pull_up" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewDiamondOtjim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:text="Алмазные отжимания"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -141,10 +141,10 @@
             app:srcCompat="@drawable/bench" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewFrancejim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:layout_gravity="center"
             android:padding="10sp"
             android:paddingStart="50sp"

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,6 +23,7 @@ import com.example.fitnesstrener.training_and_food.FoodRec;
 public class Fish extends AppCompatActivity {
     ImageButton imageButtonReturn1;
     ImageView imageViewTreska,imageViewMintai,imageViewLosos,imageViewTynec;
+    TextView  textViewTreska, textViewMintai, textViewLosos, textViewTynec;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +75,46 @@ public class Fish extends AppCompatActivity {
         imageViewTynec = findViewById(R.id.imageViewTynec);
 
         imageViewTynec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fish.this, Tynec.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewTreska = findViewById(R.id.textViewTreska);
+
+        textViewTreska.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fish.this, Treska.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewMintai = findViewById(R.id.textViewMintai);
+
+        textViewMintai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fish.this, Mintai.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewLosos = findViewById(R.id.textViewLosos);
+
+        textViewLosos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Fish.this, Losos.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewTynec = findViewById(R.id.textViewTynec);
+
+        textViewTynec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Fish.this, Tynec.class);

@@ -5,16 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.fitnesstrener.Exercise;
 import com.example.fitnesstrener.R;
-import com.example.fitnesstrener.exercise.Legs;
-import com.example.fitnesstrener.food_in_vegetables.Carrot;
-import com.example.fitnesstrener.food_in_vegetables.Cucumber;
-import com.example.fitnesstrener.food_in_vegetables.Kabachki;
-import com.example.fitnesstrener.food_in_vegetables.Kapysta;
 import com.example.fitnesstrener.food_in_wheat.Celnozernovoi;
 import com.example.fitnesstrener.food_in_wheat.Grecha;
 import com.example.fitnesstrener.food_in_wheat.Makaroni;
@@ -26,6 +19,7 @@ public class Wheat extends AppCompatActivity {
     ImageButton imageButtonReturn1;
 
     ImageView imageViewOtrybHleb,imageViewCelnozernovoi,imageViewMakaroni,imageViewGrecha;
+    TextView textViewOtrybHleb,textViewCelnozernovoi,textViewMakaroni,textViewGrecha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +77,47 @@ public class Wheat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        textViewOtrybHleb = findViewById(R.id.textViewOtrybHleb);
+
+        textViewOtrybHleb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Wheat.this, OtrybnoiHleb.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewCelnozernovoi = findViewById(R.id.textViewCelnozernovoi);
+
+        textViewCelnozernovoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Wheat.this, Celnozernovoi.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewMakaroni = findViewById(R.id.textViewMakaroni);
+
+        textViewMakaroni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Wheat.this, Makaroni.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewGrecha = findViewById(R.id.textViewGrecha);
+
+        textViewGrecha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Wheat.this, Grecha.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

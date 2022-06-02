@@ -6,7 +6,7 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333"
+    android:background="#4d4d4d"
 
     android:orientation="horizontal"
     tools:context=".profile.Profile">
@@ -18,7 +18,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="9dp"
         android:text="TextView"
-        android:textColor="#838282"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/yglevodi" />
@@ -30,7 +30,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        android:textColor="#838282"
+        android:textColor="#000000"
 
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView12"
@@ -84,7 +84,7 @@
         android:layout_marginTop="16dp"
         android:text=""
         android:textAlignment="center"
-        android:textColor="#838282"
+        android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +110,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="148dp"
         android:text="TextView"
-        android:textColor="#838282"
+        android:textColor="#000000"
 
         android:textSize="16sp"
         app:layout_constraintHorizontal_bias="0.016"
@@ -124,7 +124,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="13dp"
         android:text="TextView"
-        android:textColor="#838282"
+        android:textColor="#000000"
 
         android:textSize="16sp"
 
@@ -141,14 +141,14 @@
         android:text="TextView"
         android:textAlignment="textStart"
 
-        android:textColor="#838282"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="245dp"
+        android:layout_width="260dp"
         android:layout_height="23dp"
         android:layout_marginTop="48dp"
         android:text="Пищевая ценность на 100гр:"

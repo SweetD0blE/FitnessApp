@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,6 +23,9 @@ import com.example.fitnesstrener.training_and_food.FoodRec;
 public class Nuts extends AppCompatActivity {
     ImageButton imageButtonReturn1;
     ImageView imageViewFunduk,imageViewMindal,imageViewGrezkiyOreh,imageViewCashew;
+    TextView textViewFunduk,textViewMindal , textViewGrezkiyOreh, textViewCashew;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +76,46 @@ public class Nuts extends AppCompatActivity {
         imageViewCashew = findViewById(R.id.imageViewCashew);
 
         imageViewCashew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Nuts.this, Cashew.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewFunduk = findViewById(R.id.textViewFunduk);
+
+        textViewFunduk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Nuts.this, Funduk.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewMindal = findViewById(R.id.textViewMindal);
+
+        textViewMindal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Nuts.this, Mindal.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewGrezkiyOreh = findViewById(R.id.textViewGrezkiyOreh);
+
+        textViewGrezkiyOreh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Nuts.this, GrezkiyOreh.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewCashew = findViewById(R.id.textViewCashew);
+
+        textViewCashew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Nuts.this, Cashew.class);

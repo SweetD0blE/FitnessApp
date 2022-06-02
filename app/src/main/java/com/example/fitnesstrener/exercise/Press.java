@@ -21,7 +21,7 @@ public class Press extends AppCompatActivity {
     //Объявляем используемые переменные:
     ImageButton imageButtonReturn1;
     ImageView imageViewScrychivanie,imageViewPlanka, imageViewSideplanka, imageViewBicycle,imageViewLegsUp;
-    TextView title, osnmysch, slojnost, description;
+    TextView textViewScrychivanie,textViewPlanka,textViewSideplanka,textViewBicycle,textViewLegsUp;
 
 
     @Override
@@ -81,6 +81,56 @@ public class Press extends AppCompatActivity {
         imageViewLegsUp = findViewById(R.id.imageViewLegsUp);
 
         imageViewLegsUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Press.this, LegsUp.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewScrychivanie = findViewById(R.id.textViewScrychivanie);
+
+        textViewScrychivanie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Press.this, Twisting.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewPlanka = findViewById(R.id.textViewPlanka);
+
+        textViewPlanka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Press.this, Planka.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewSideplanka = findViewById(R.id.textViewSideplanka);
+
+        textViewSideplanka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Press.this, SidePlanka.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewBicycle = findViewById(R.id.textViewBicycle);
+
+        textViewBicycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Press.this, Bicycle.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewLegsUp = findViewById(R.id.textViewLegsUp);
+
+        textViewLegsUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Press.this, LegsUp.class);

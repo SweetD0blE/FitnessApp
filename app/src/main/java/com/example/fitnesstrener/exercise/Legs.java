@@ -21,6 +21,7 @@ public class Legs extends AppCompatActivity {
 
     ImageButton imageButtonReturn1;
     ImageView imageViewSgibanieNog, imageViewZashagivanieNaLavky, imageViewPrisedaniyaSoShtangoi,imageViewTyagaSGantelyami ,imageViewVipadiSGantelyami ;
+    TextView textViewSgibanieNog,textViewZashagivanieNaLavky,textViewPrisedaniyaSoShtangoi,textViewTyagaSGantelyami,textViewVipadiSGantelyami;
 
 
     @Override
@@ -37,6 +38,7 @@ public class Legs extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         imageViewSgibanieNog = findViewById(R.id.imageViewSgibanieNog);
 
         imageViewSgibanieNog.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +82,56 @@ public class Legs extends AppCompatActivity {
         imageViewVipadiSGantelyami = findViewById(R.id.imageViewVipadiSGantelyami);
 
         imageViewVipadiSGantelyami.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Legs.this, VipadiSGantelyami.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewSgibanieNog = findViewById(R.id.textViewSgibanieNog);
+
+        textViewSgibanieNog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Legs.this, SgibanieNog.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewZashagivanieNaLavky = findViewById(R.id.textViewZashagivanieNaLavky);
+
+        textViewZashagivanieNaLavky.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Legs.this, Zashagivanie.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewPrisedaniyaSoShtangoi = findViewById(R.id.textViewPrisedaniyaSoShtangoi);
+
+        textViewPrisedaniyaSoShtangoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Legs.this, PrisedaniyaSoShtangoi.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewTyagaSGantelyami = findViewById(R.id.textViewTyagaSGantelyami);
+
+        textViewTyagaSGantelyami.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Legs.this, TyagaSGantelyami.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewVipadiSGantelyami = findViewById(R.id.textViewVipadiSGantelyami);
+
+        textViewVipadiSGantelyami.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Legs.this, VipadiSGantelyami.class);

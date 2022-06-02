@@ -22,7 +22,7 @@ public class Arms extends AppCompatActivity {
 
     ImageButton imageButtonReturn1;
     ImageView imageViewMolotok, imageViewPushUp, imageViewUpShtanga,imageViewDiamondOtjim ,imageViewFrancejim ;
-    TextView title, osnmysch, slojnost, description;
+    TextView textViewPushUp, textViewMolotok,textViewUpShtanga , textViewDiamondOtjim,textViewFrancejim;
 
 
     @Override
@@ -82,6 +82,56 @@ public class Arms extends AppCompatActivity {
         imageViewFrancejim = findViewById(R.id.imageViewFrancejim);
 
         imageViewFrancejim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Arms.this, FranceJim.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewMolotok = findViewById(R.id.textViewMolotok);
+
+        textViewMolotok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Arms.this, Molotok.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewPushUp = findViewById(R.id.textViewPushUp);
+
+        textViewPushUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Arms.this, OntjimSkamii.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewUpShtanga = findViewById(R.id.textViewUpShtanga);
+
+        textViewUpShtanga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Arms.this, UpShtanga.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewDiamondOtjim = findViewById(R.id.textViewDiamondOtjim);
+
+        textViewDiamondOtjim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Arms.this, DiamondOtjim.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewFrancejim = findViewById(R.id.textViewFrancejim);
+
+        textViewFrancejim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Arms.this, FranceJim.class);

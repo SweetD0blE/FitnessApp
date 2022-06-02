@@ -27,9 +27,8 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 public class Dairy extends AppCompatActivity {
     ImageButton imageButtonReturn1;
     ImageView imageViewKefir,imageViewCheese,imageViewEggs,imageViewYogurt;
+    TextView textViewKefir,textViewYogurt, textViewCheese,textViewEggs ;
 
-    FirebaseAuth mAuth;
-    FirebaseFirestore fStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +78,46 @@ public class Dairy extends AppCompatActivity {
         imageViewYogurt = findViewById(R.id.imageViewYogurt);
 
         imageViewYogurt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dairy.this, Yogurt.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewKefir = findViewById(R.id.textViewKefir);
+
+        textViewKefir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dairy.this, Kefir.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewCheese = findViewById(R.id.textViewCheese);
+
+        textViewCheese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dairy.this, Cheese.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewEggs = findViewById(R.id.textViewEggs);
+
+        textViewEggs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dairy.this, Eggs.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewYogurt = findViewById(R.id.textViewYogurt);
+
+        textViewYogurt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dairy.this, Yogurt.class);

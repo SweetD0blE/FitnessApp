@@ -6,7 +6,7 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333"
+    android:background="#4d4d4d"
 
     android:orientation="horizontal"
     tools:context=".exercise.Press">
@@ -20,7 +20,7 @@
             android:layout_height="39dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:background="#333"
+            android:background="#4d4d4d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/return1"
@@ -39,11 +39,11 @@
             app:srcCompat="@drawable/twisting" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewScrychivanie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Скручивания"
@@ -64,12 +64,12 @@
             app:srcCompat="@drawable/plank" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewPlanka"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Планка"
             android:textSize="18sp"
@@ -89,12 +89,12 @@
             app:srcCompat="@drawable/side_plank" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewSideplanka"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Боковая планка"
             android:textSize="18sp"
@@ -114,12 +114,12 @@
             app:srcCompat="@drawable/bicycle" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewBicycle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="10sp"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:paddingStart="50sp"
             android:text="Велосипед"
             android:textSize="18sp"
@@ -139,11 +139,11 @@
             app:srcCompat="@drawable/up" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/textViewLegsUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#838282"
+            android:textColor="#1a1a1a"
             android:padding="10sp"
             android:paddingStart="50sp"
             android:text="Подъем ног"

@@ -5,7 +5,7 @@
     android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333"
+    android:background="#4d4d4d"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="78dp"
         android:layout_marginBottom="4dp"
-        android:background="#333"
+        android:background="#4d4d4d"
         android:src="@drawable/exercises"
-        app:layout_constraintBottom_toTopOf="@+id/Exercise"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewExercise"
         app:layout_constraintEnd_toStartOf="@+id/train" />
 
     <ImageButton
@@ -26,9 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="4dp"
-        android:background="#333"
+        android:background="#4d4d4d"
         android:src="@drawable/training"
-        app:layout_constraintBottom_toTopOf="@+id/Train"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewTrain"
         app:layout_constraintEnd_toStartOf="@+id/imgjour" />
 
     <ImageButton
@@ -37,10 +37,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="4dp"
-        android:background="#333"
+        android:background="#4d4d4d"
 
         android:src="@drawable/profile"
-        app:layout_constraintBottom_toTopOf="@+id/Profile"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewProfile"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton
@@ -50,14 +50,14 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="4dp"
-        android:background="#333"
+        android:background="#4d4d4d"
 
         android:src="@drawable/journal"
-        app:layout_constraintBottom_toTopOf="@+id/Journal"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewJournal"
         app:layout_constraintEnd_toStartOf="@+id/profile" />
 
     <TextView
-        android:id="@+id/Exercise"
+        android:id="@+id/TextViewExercise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
@@ -68,10 +68,10 @@
 
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Train" />
+        app:layout_constraintEnd_toStartOf="@+id/TextViewTrain" />
 
     <TextView
-        android:id="@+id/Train"
+        android:id="@+id/TextViewTrain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -82,10 +82,10 @@
 
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Journal" />
+        app:layout_constraintEnd_toStartOf="@+id/TextViewJournal" />
 
     <TextView
-        android:id="@+id/Journal"
+        android:id="@+id/TextViewJournal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -95,10 +95,10 @@
         android:textColor="#000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Profile" />
+        app:layout_constraintEnd_toStartOf="@+id/TextViewProfile" />
 
     <TextView
-        android:id="@+id/Profile"
+        android:id="@+id/TextViewProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"

@@ -54,7 +54,7 @@ public class Notification extends FirebaseMessagingService {
         NotificationCompat.Builder notificationBuilder =
                 new NotificationCompat.Builder(this, channelId)
                         .setSmallIcon(R.drawable.ic_stat_notification)
-                        .setContentTitle("My new Notification")
+                        .setContentTitle("Здравствуйте!")
                         .setContentText(messageBody)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)

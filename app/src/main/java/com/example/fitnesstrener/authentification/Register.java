@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -43,7 +44,8 @@ public class Register extends AppCompatActivity {
      FirebaseFirestore fStore;
      String userID;
      AwesomeValidation awesomeValidation;
-     RadioButton mMale,mFemale;
+     RadioButton mMale,mFemale,radioButton;
+     RadioGroup radioGroup;
      int year,month,day;
      DatePickerDialog.OnDateSetListener onDateSetListener;
 
@@ -63,8 +65,10 @@ public class Register extends AppCompatActivity {
         mEmail_register = findViewById(R.id.email_register);
         mPassword_register = findViewById(R.id.password_register);
         mRegister = findViewById(R.id.register);
-        mMale = findViewById(R.id.radioButtonM);
-        mFemale = findViewById(R.id.radioButtonW);
+
+        radioGroup = findViewById(R.id.ragioGender);
+       // mMale = findViewById(R.id.radioButtonM);
+       // mFemale = findViewById(R.id.radioButtonW);
         mNumber = findViewById(R.id.phone_register);
         mDate = findViewById(R.id.date_register);
 
@@ -79,7 +83,8 @@ public class Register extends AppCompatActivity {
                 day = calendar.get(Calendar.DAY_OF_MONTH);
                 month = calendar.get(Calendar.MONTH);
                 year = calendar.get(Calendar.YEAR);
-                DatePickerDialog datePickerDialog = new DatePickerDialog(Register.this, new DatePickerDialog.OnDateSetListener() {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(Register.this,
+                        new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                         month = month + 1;
@@ -100,10 +105,11 @@ public class Register extends AppCompatActivity {
                 String password = mPassword_register.getText().toString().trim();
                 String fullName = mFullName.getText().toString();
                 String weight = mWeight.getText().toString();
-                String male = mMale.getText().toString();
-                String female = mFemale.getText().toString();
+                //String male = mMale.getText().toString();
+                //String female = mFemale.getText().toString();
                 String number = mNumber.getText().toString();
                 String date = mDate.getText().toString();
+
 
                 if(fullName.isEmpty()){
                     mFullName.setError("Введите полное имя");
@@ -138,6 +144,11 @@ public class Register extends AppCompatActivity {
                 }
 
 
+                int radioId = radioGroup.getCheckedRadioButtonId();
+                radioButton = findViewById(radioId);
+                String gender = radioButton.getText().toString();
+
+
                 if (email.isEmpty() || password.isEmpty()) {
                     Toast.makeText(Register.this, "Заполните все данные", Toast.LENGTH_SHORT).show();
 
@@ -152,15 +163,16 @@ public class Register extends AppCompatActivity {
                                         user.put("ФИО",fullName);
                                         user.put("Логин",email);
                                         user.put("Вес",weight);
-                                        user.put("Пол",male);
-                                        user.put("Пол",female);
+                                        user.put("Пол",gender);
+                                        //user.put("Пол",female);
+                                        //user.put("Ваш Пол",male);
                                         user.put("Телефон",number);
                                         user.put("Дата рождения",date);
 
                                         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                             @Override
                                             public void onSuccess(Void aVoid) {
-                                                Log.d("Сообщение", "Пользователь создан c уникальным кодом:" + userID);
+                                               Toast.makeText(Register.this,"Вы успешно зарегестрировались",Toast.LENGTH_SHORT).show();
                                             }
                                         }).addOnFailureListener(new OnFailureListener() {
                                             @Override

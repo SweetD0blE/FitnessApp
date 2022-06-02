@@ -24,7 +24,7 @@ import com.example.fitnesstrener.exercise_in_back.TyagaVerhnegoBlocka;
 public class Back extends AppCompatActivity {
     ImageButton imageButtonReturn1;
     ImageView imageViewHyperExtenzia, imageViewPodtyagivaniya, imageViewTyagatrossa,imageViewTyagaverhnegobloka ,imageViewTyagaganteli ;
-    TextView title, osnmysch, slojnost, description;
+    TextView textViewHyperExtenzia, textViewPodtyagivaniya, textViewTyagatrossa,textViewTyagaverhnegobloka , textViewTyagaganteli;
 
 
     @Override
@@ -84,6 +84,56 @@ public class Back extends AppCompatActivity {
         imageViewTyagaganteli = findViewById(R.id.imageViewTyagaganteli);
 
         imageViewTyagaganteli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Back.this, TyagaGanteli.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewHyperExtenzia = findViewById(R.id.textViewHyperExtenzia);
+
+        textViewHyperExtenzia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Back.this, HyperExtenzia.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewPodtyagivaniya = findViewById(R.id.textViewPodtyagivaniya);
+
+        textViewPodtyagivaniya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Back.this, Podtyagivaniya.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewTyagatrossa = findViewById(R.id.textViewTyagatrossa);
+
+        textViewTyagatrossa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Back.this, TyagaTrosa.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewTyagaverhnegobloka = findViewById(R.id.textViewTyagaverhnegobloka);
+
+        textViewTyagaverhnegobloka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Back.this, TyagaVerhnegoBlocka.class);
+                startActivity(intent);
+            }
+        });
+
+        textViewTyagaganteli = findViewById(R.id.textViewTyagaganteli);
+
+        textViewTyagaganteli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Back.this, TyagaGanteli.class);
