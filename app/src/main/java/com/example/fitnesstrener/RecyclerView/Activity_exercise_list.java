@@ -61,7 +61,7 @@ public class Activity_exercise_list extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         exercise_lists = new ArrayList<>();
 
-        exerciseAdapter = new ExerciseAdapter(exercise_lists);
+        exerciseAdapter = new ExerciseAdapter(this,exercise_lists);
 
         recyclerView.setAdapter(exerciseAdapter);
 
@@ -115,6 +115,357 @@ public class Activity_exercise_list extends AppCompatActivity {
         };
         searchExercise.addTextChangedListener(textWatcher);
 
+        if(name != null && name.equalsIgnoreCase("Молотки")){
+            fstore.collection("Search").whereEqualTo("name","Молотки").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+
+        if(name != null && name.equalsIgnoreCase("Алмазные отжимания")){
+            fstore.collection("Search").whereEqualTo("name","Алмазные отжимания").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Беговая дорожка")){
+            fstore.collection("Search").whereEqualTo("name","Беговая дорожка").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Берпи классическое")){
+            fstore.collection("Search").whereEqualTo("name","Берпи классическое").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Боковая планка")){
+            fstore.collection("Search").whereEqualTo("name","Боковая планка").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Велосипед")){
+            fstore.collection("Search").whereEqualTo("name","Велосипед").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Велотренажер")){
+            fstore.collection("Search").whereEqualTo("name","Велотренажер").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Выпады с гантелями")){
+            fstore.collection("Search").whereEqualTo("name","Выпады с гантелями").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Гиперэкстензия")){
+            fstore.collection("Search").whereEqualTo("name","Гиперэкстензия").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Жим гантелей")){
+            fstore.collection("Search").whereEqualTo("name","Жим гантелей").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Жим лежа")){
+            fstore.collection("Search").whereEqualTo("name","Жим лежа").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Зашагивания на лавку")){
+            fstore.collection("Search").whereEqualTo("name","Зашагивания на лавку").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Отжимания")){
+            fstore.collection("Search").whereEqualTo("name","Отжимания").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Отжимания на брусьях")){
+            fstore.collection("Search").whereEqualTo("name","Отжимания на брусьях").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Отжимания от скамьи")){
+            fstore.collection("Search").whereEqualTo("name","Отжимания от скамьи").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Планка")){
+            fstore.collection("Search").whereEqualTo("name","Планка").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Подтягивания")){
+            fstore.collection("Search").whereEqualTo("name","Подтягивания").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Подъем ног")){
+            fstore.collection("Search").whereEqualTo("name","Подъем ног").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Подъем штанги")){
+            fstore.collection("Search").whereEqualTo("name","Подъем штанги").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Приседания со штангой")){
+            fstore.collection("Search").whereEqualTo("name","Приседания со штангой").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Прыжки со скакалкой")){
+            fstore.collection("Search").whereEqualTo("name","Прыжки со скакалкой").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Сведение рук")){
+            fstore.collection("Search").whereEqualTo("name","Сведение рук").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Сгибание ног")){
+            fstore.collection("Search").whereEqualTo("name","Сгибание ног").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }if(name != null && name.equalsIgnoreCase("Скручивания")){
+            fstore.collection("Search").whereEqualTo("name","Скручивания").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Степпер")){
+            fstore.collection("Search").whereEqualTo("name","Степпер").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Тяга верхнего блока")){
+            fstore.collection("Search").whereEqualTo("name","Тяга верхнего блока").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Тяга гантели в наклоне")){
+            fstore.collection("Search").whereEqualTo("name","Тяга гантели в наклоне").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Тяга с гантелями")){
+            fstore.collection("Search").whereEqualTo("name","Тяга с гантелями").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Тяга троса сидя")){
+            fstore.collection("Search").whereEqualTo("name","Тяга троса сидя").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+        if(name != null && name.equalsIgnoreCase("Французский жим сидя")){
+            fstore.collection("Search").whereEqualTo("name","Французский жим сидя").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    for (DocumentSnapshot documentSnapshot:task.getResult().getDocuments()){
+                        Exercise_list exercise_list = documentSnapshot.toObject(Exercise_list.class);
+                        exercise_list.add(exercise_list);
+                        exerciseAdapter.notifyDataSetChanged();
+                    }
+                }
+            });
+        }
+
     }
        private void searchExercise(String name) {
            if (!name.isEmpty()) {
@@ -136,6 +487,8 @@ public class Activity_exercise_list extends AppCompatActivity {
                        });
            }
        }
+
+
 
 
 
