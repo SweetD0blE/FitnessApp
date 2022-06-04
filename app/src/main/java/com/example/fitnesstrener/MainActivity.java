@@ -1,23 +1,17 @@
 package com.example.fitnesstrener;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.fitnesstrener.calendar.Calendar;
+import com.example.fitnesstrener.calendar.CalendarAdapter;
 import com.example.fitnesstrener.training_and_food.Training;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.iid.FirebaseInstanceIdReceiver;
-import com.google.firebase.iid.internal.FirebaseInstanceIdInternal;
-import com.google.firebase.messaging.FirebaseMessaging;
+
+import java.util.Calendar;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Imgjour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Calendar.class);
+                Intent intent = new Intent(MainActivity.this, com.example.fitnesstrener.calendar.Calendar.class);
                 startActivity(intent);
             }
         });

@@ -13,6 +13,12 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessTrener">
+        <activity
+            android:name=".calendar.EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".calendar.WeekViewActivity"
+            android:exported="false" />
         <activity android:name=".authorization.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,266 +26,254 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".Notification" android:exported="false">
+
+        <service
+            android:name=".Notification"
+            android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT">
-                </action>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <activity
             android:name=".calendar.Calendar"
-            android:label="Calendar">
-        </activity>
-        <activity android:name=".training_and_food.Training"
-            android:label="Training">
-        </activity>
-        <activity android:name=".training_and_food.FoodRec"
-            android:label="FoodRecommendation">
-        </activity>
+            android:label="Calendar" />
+        <activity
+            android:name=".training_and_food.Training"
+            android:label="Training" />
+        <activity
+            android:name=".training_and_food.FoodRec"
+            android:label="FoodRecommendation" />
         <activity
             android:name=".authentification.Register"
-            android:label="Login">
-        </activity>
+            android:label="Login" />
         <activity
             android:name=".MainActivity"
-            android:label="Registration">
-        </activity>
+            android:label="Registration" />
         <activity
             android:name=".Exercise"
-            android:label="Exercise">
-        </activity>
+            android:label="Exercise" />
         <activity
             android:name=".profile.Profile"
-            android:label="Profile">
-        </activity>
+            android:label="Profile" />
         <activity
             android:name=".exercise.Press"
-            android:label="Press">
-        </activity>
+            android:label="Press" />
         <activity
             android:name=".exercise.Arms"
-            android:label="Arms">
-        </activity>
+            android:label="Arms" />
         <activity
             android:name=".exercise.Back"
-            android:label="Back">
-        </activity>
+            android:label="Back" />
         <activity
             android:name=".exercise.Chest"
-            android:label="Chest">
-        </activity>
+            android:label="Chest" />
         <activity
             android:name=".exercise.Legs"
-            android:label="Legs">
-        </activity>
+            android:label="Legs" />
         <activity
             android:name=".exercise.Cardio"
-            android:label="Cardio">
-        </activity>
-        <activity android:name=".RecyclerView.Activity_exercise_list">
-        </activity>
+            android:label="Cardio" />
+        <activity android:name=".RecyclerView.Activity_exercise_list" />
         <activity
             android:name=".exercise_in_press.Twisting"
-            android:label="Twisting">
-        </activity>
+            android:label="Twisting" />
         <activity
             android:name=".exercise_in_press.Planka"
-            android:label="Planka"></activity>
+            android:label="Planka" />
         <activity
             android:name=".exercise_in_press.SidePlanka"
-            android:label="SidePlanka"></activity>
+            android:label="SidePlanka" />
         <activity
             android:name=".exercise_in_press.Bicycle"
-            android:label="Bicycle"></activity>
+            android:label="Bicycle" />
         <activity
             android:name=".exercise_in_press.LegsUp"
-            android:label="LegsUp"></activity>
+            android:label="LegsUp" />
         <activity
             android:name=".exercise_in_arms.Molotok"
-            android:label="Molotok"></activity>
+            android:label="Molotok" />
         <activity
             android:name=".exercise_in_arms.DiamondOtjim"
-            android:label="DiamondOtjim"></activity>
+            android:label="DiamondOtjim" />
         <activity
             android:name=".exercise_in_arms.FranceJim"
-            android:label="FranceJim"></activity>
+            android:label="FranceJim" />
         <activity
             android:name=".exercise_in_arms.OntjimSkamii"
-            android:label="OntjimSkamii"></activity>
+            android:label="OntjimSkamii" />
         <activity
             android:name=".exercise_in_arms.UpShtanga"
-            android:label="UpShtanga"></activity>
+            android:label="UpShtanga" />
         <activity
             android:name=".exercise_in_back.HyperExtenzia"
-            android:label="HyperExtenzia"></activity>
+            android:label="HyperExtenzia" />
         <activity
             android:name=".exercise_in_back.Podtyagivaniya"
-            android:label="Podtyagivaniya"></activity>
+            android:label="Podtyagivaniya" />
         <activity
             android:name=".exercise_in_back.TyagaGanteli"
-            android:label="TyagaGanteli"></activity>
+            android:label="TyagaGanteli" />
         <activity
             android:name=".exercise_in_back.TyagaTrosa"
-            android:label="TyagaTrosa"></activity>
+            android:label="TyagaTrosa" />
         <activity
             android:name=".exercise_in_back.TyagaVerhnegoBlocka"
-            android:label="TyagaVerhnegoBlocka"></activity>
+            android:label="TyagaVerhnegoBlocka" />
         <activity
             android:name=".exercise_in_chest.JimGantelei"
-            android:label="JimGantelei"></activity>
+            android:label="JimGantelei" />
         <activity
             android:name=".exercise_in_chest.JimShtangiLeja"
-            android:label="JimShtangiLeja"></activity>
+            android:label="JimShtangiLeja" />
         <activity
             android:name=".exercise_in_chest.Otjimaniya"
-            android:label="Otjimaniya"></activity>
+            android:label="Otjimaniya" />
         <activity
             android:name=".exercise_in_chest.OtjimNaBrysiah"
-            android:label="OtjimNaBrysiah"></activity>
+            android:label="OtjimNaBrysiah" />
         <activity
             android:name=".exercise_in_chest.SvedenieRyk"
-            android:label="SvedenieRyk"></activity>
+            android:label="SvedenieRyk" />
         <activity
             android:name=".exercise_in_legs.PrisedaniyaSoShtangoi"
-            android:label="PrisedaniyaSoShtangoi"></activity>
+            android:label="PrisedaniyaSoShtangoi" />
         <activity
             android:name=".exercise_in_legs.SgibanieNog"
-            android:label="SgibanieNog"></activity>
+            android:label="SgibanieNog" />
         <activity
             android:name=".exercise_in_legs.TyagaSGantelyami"
-            android:label="TyagaSGantelyami"></activity>
+            android:label="TyagaSGantelyami" />
         <activity
             android:name=".exercise_in_legs.VipadiSGantelyami"
-            android:label="VipadiSGantelyami"></activity>
+            android:label="VipadiSGantelyami" />
         <activity
             android:name=".exercise_in_legs.Zashagivanie"
-            android:label="Zashagivanie"></activity>
+            android:label="Zashagivanie" />
         <activity
             android:name=".exercise_in_cardio.Stepper"
-            android:label="Stepper"></activity>
+            android:label="Stepper" />
         <activity
             android:name=".exercise_in_cardio.BegovayaDorojka"
-            android:label="BegovayaDorojka"></activity>
+            android:label="BegovayaDorojka" />
         <activity
             android:name=".exercise_in_cardio.Berpi"
-            android:label="Berpi"></activity>
+            android:label="Berpi" />
         <activity
             android:name=".exercise_in_cardio.JumpWithSkakalka"
-            android:label="JumpWithSkakalka"></activity>
+            android:label="JumpWithSkakalka" />
         <activity
             android:name=".exercise_in_cardio.Velotrenajor"
-            android:label="Velotrenajor"></activity>
-        <activity android:name=".food_in_training.Dairy"
-            android:label="Dairy">
-        </activity>
-        <activity android:name=".food_in_training.Fish"
-            android:label="Fish">
-        </activity>
-        <activity android:name=".food_in_training.Meat"
-            android:label="Meat">
-        </activity>
-        <activity android:name=".food_in_training.Nuts"
-            android:label="Nuts">
-        </activity>
-        <activity android:name=".food_in_training.Vegetables"
-            android:label="Vegetables">
-        </activity>
-        <activity android:name=".food_in_training.Water"
-            android:label="Water">
-        </activity>
-        <activity android:name=".food_in_training.Wheat"
-            android:label="Wheat">
-        </activity>
-        <activity android:name=".food_in_dairy.Kefir"
-            android:label="Kefir">
-        </activity>
-        <activity android:name=".food_in_dairy.Cheese"
-            android:label="Cheese">
-        </activity>
-        <activity android:name=".food_in_dairy.Eggs"
-            android:label="Eggs">
-        </activity>
-        <activity android:name=".food_in_dairy.Yogurt"
-            android:label="Yogurt">
-        </activity>
-        <activity android:name=".food_in_meat.Chicken"
-            android:label="Chicken">
-        </activity>
-        <activity android:name=".food_in_meat.Indeika"
-            android:label="Indeika">
-        </activity>
-        <activity android:name=".food_in_meat.Rabbit"
-            android:label="Rabbit">
-        </activity>
-        <activity android:name=".food_in_meat.Telyatina"
-            android:label="Telyatina">
-        </activity>
-        <activity android:name=".food_in_fish.Losos"
-            android:label="Losos">
-        </activity>
-        <activity android:name=".food_in_fish.Mintai"
-            android:label="Mintai">
-        </activity>
-        <activity android:name=".food_in_fish.Treska"
-            android:label="Treska">
-        </activity>
-        <activity android:name=".food_in_fish.Tynec"
-            android:label="Tynec">
-        </activity>
-        <activity android:name=".food_in_vegetables.Carrot"
-            android:label="Carrot">
-        </activity>
-        <activity android:name=".food_in_vegetables.Cucumber"
-            android:label="Cucumber">
-        </activity>
-        <activity android:name=".food_in_vegetables.Kabachki"
-            android:label="Kabachki">
-        </activity>
-        <activity android:name=".food_in_vegetables.Kapysta"
-            android:label="Kapysta">
-        </activity>
-        <activity android:name=".food_in_nuts.Cashew"
-            android:label="Cashew">
-        </activity>
-        <activity android:name=".food_in_nuts.Funduk"
-            android:label="Funduk">
-        </activity>
-        <activity android:name=".food_in_nuts.GrezkiyOreh"
-            android:label="GrezkiyOreh">
-        </activity>
-        <activity android:name=".food_in_nuts.Mindal"
-            android:label="Mindal">
-        </activity>
-        <activity android:name=".food_in_wheat.Celnozernovoi"
-            android:label="Celnozernovoi">
-        </activity>
-        <activity android:name=".food_in_wheat.Grecha"
-            android:label="Grecha">
-        </activity>
-        <activity android:name=".food_in_wheat.Makaroni"
-            android:label="Makaroni">
-        </activity>
-        <activity android:name=".food_in_wheat.OtrybnoiHleb"
-            android:label="OtrybnoiHleb">
-        </activity>
-        <activity android:name=".training_in.Ponedelnik"
-            android:label="Ponedelnik">
-        </activity>
-        <activity android:name=".training_in.Sreda"
-            android:label="Sreda">
-        </activity>
-        <activity android:name=".training_in.Pyatniza"
-            android:label="Pyatniza">
-        </activity>
+            android:label="Velotrenajor" />
+        <activity
+            android:name=".food_in_training.Dairy"
+            android:label="Dairy" />
+        <activity
+            android:name=".food_in_training.Fish"
+            android:label="Fish" />
+        <activity
+            android:name=".food_in_training.Meat"
+            android:label="Meat" />
+        <activity
+            android:name=".food_in_training.Nuts"
+            android:label="Nuts" />
+        <activity
+            android:name=".food_in_training.Vegetables"
+            android:label="Vegetables" />
+        <activity
+            android:name=".food_in_training.Water"
+            android:label="Water" />
+        <activity
+            android:name=".food_in_training.Wheat"
+            android:label="Wheat" />
+        <activity
+            android:name=".food_in_dairy.Kefir"
+            android:label="Kefir" />
+        <activity
+            android:name=".food_in_dairy.Cheese"
+            android:label="Cheese" />
+        <activity
+            android:name=".food_in_dairy.Eggs"
+            android:label="Eggs" />
+        <activity
+            android:name=".food_in_dairy.Yogurt"
+            android:label="Yogurt" />
+        <activity
+            android:name=".food_in_meat.Chicken"
+            android:label="Chicken" />
+        <activity
+            android:name=".food_in_meat.Indeika"
+            android:label="Indeika" />
+        <activity
+            android:name=".food_in_meat.Rabbit"
+            android:label="Rabbit" />
+        <activity
+            android:name=".food_in_meat.Telyatina"
+            android:label="Telyatina" />
+        <activity
+            android:name=".food_in_fish.Losos"
+            android:label="Losos" />
+        <activity
+            android:name=".food_in_fish.Mintai"
+            android:label="Mintai" />
+        <activity
+            android:name=".food_in_fish.Treska"
+            android:label="Treska" />
+        <activity
+            android:name=".food_in_fish.Tynec"
+            android:label="Tynec" />
+        <activity
+            android:name=".food_in_vegetables.Carrot"
+            android:label="Carrot" />
+        <activity
+            android:name=".food_in_vegetables.Cucumber"
+            android:label="Cucumber" />
+        <activity
+            android:name=".food_in_vegetables.Kabachki"
+            android:label="Kabachki" />
+        <activity
+            android:name=".food_in_vegetables.Kapysta"
+            android:label="Kapysta" />
+        <activity
+            android:name=".food_in_nuts.Cashew"
+            android:label="Cashew" />
+        <activity
+            android:name=".food_in_nuts.Funduk"
+            android:label="Funduk" />
+        <activity
+            android:name=".food_in_nuts.GrezkiyOreh"
+            android:label="GrezkiyOreh" />
+        <activity
+            android:name=".food_in_nuts.Mindal"
+            android:label="Mindal" />
+        <activity
+            android:name=".food_in_wheat.Celnozernovoi"
+            android:label="Celnozernovoi" />
+        <activity
+            android:name=".food_in_wheat.Grecha"
+            android:label="Grecha" />
+        <activity
+            android:name=".food_in_wheat.Makaroni"
+            android:label="Makaroni" />
+        <activity
+            android:name=".food_in_wheat.OtrybnoiHleb"
+            android:label="OtrybnoiHleb" />
+        <activity
+            android:name=".training_in.Ponedelnik"
+            android:label="Ponedelnik" />
+        <activity
+            android:name=".training_in.Sreda"
+            android:label="Sreda" />
+        <activity
+            android:name=".training_in.Pyatniza"
+            android:label="Pyatniza" />
 
         <meta-data
             android:name="firebase_messaging_auto_init_enabled"
-            android:value="false">
-        </meta-data>
+            android:value="false" />
         <meta-data
             android:name="firebase_analytics_collection_enabled"
-            android:value="false">
-        </meta-data>
+            android:value="false" />
     </application>
 
 </manifest>

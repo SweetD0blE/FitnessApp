@@ -67,8 +67,6 @@ public class Register extends AppCompatActivity {
         mRegister = findViewById(R.id.register);
 
         radioGroup = findViewById(R.id.ragioGender);
-       // mMale = findViewById(R.id.radioButtonM);
-       // mFemale = findViewById(R.id.radioButtonW);
         mNumber = findViewById(R.id.phone_register);
         mDate = findViewById(R.id.date_register);
 
@@ -105,8 +103,6 @@ public class Register extends AppCompatActivity {
                 String password = mPassword_register.getText().toString().trim();
                 String fullName = mFullName.getText().toString();
                 String weight = mWeight.getText().toString();
-                //String male = mMale.getText().toString();
-                //String female = mFemale.getText().toString();
                 String number = mNumber.getText().toString();
                 String date = mDate.getText().toString();
 
